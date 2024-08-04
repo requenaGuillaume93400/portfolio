@@ -1,5 +1,5 @@
 <template>
-  <!-- 0) Header Component -->
+  <!-- 0) DONE Header Component -->
   <header>
     <HeaderComponent />
   </header>
@@ -28,7 +28,6 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import HeaderComponent from "./components/shared/HeaderComponent";
 import FooterComponent from "./components/shared/FooterComponent";
 
@@ -39,7 +38,8 @@ export default {
 </script>
 
 <style>
-/* TODO - use separate css file for @font-face and * selector */
+/* TODO - use separate css file for @font-face and * selector 
+or for every style block in components ? */
 @font-face {
   font-family: "comfortaa";
   src: url("./assets/fonts/comfortaa/Comfortaa-Regular.woff2") format("woff2");
@@ -63,6 +63,7 @@ export default {
 }
 
 header {
+  width: 100%;
   height: 100vh;
   /* Gros probleme de style avec le retrait de l'image de fond et le fond blanc .... */
   background-color: rgba(0, 0, 0, 0.4);

@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2>Contact</h2>
+
     <div>
       <p>
         <a href="mailto:g.requena@laposte.net" title="Envoyez moi un e-mail"
@@ -24,6 +25,7 @@
       </p>
     </div>
   </div>
+
   <div class="social">
     <p>
       <a
@@ -43,10 +45,6 @@
     <p>Tous droits réservés</p>
   </div>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 i {
@@ -75,24 +73,18 @@ div:first-child div {
 div:first-child div:nth-of-type(1) {
   border-color: orange;
 }
-div:first-child div:nth-of-type(1) i,
-div:first-child div:nth-of-type(1) p,
-div:first-child div:nth-of-type(1) a {
-  color: orange;
-}
 div:first-child div:nth-of-type(1) i:hover,
 div:first-child div:nth-of-type(1) p:hover,
-div:first-child div:nth-of-type(1) a:hover {
-  color: rgb(135, 59, 126);
-}
-div:first-child div:nth-of-type(2) {
-  border-color: rgb(135, 59, 126);
-}
+div:first-child div:nth-of-type(1) a:hover,
+div:first-child div:nth-of-type(2),
 div:first-child div:nth-of-type(2) i,
 div:first-child div:nth-of-type(2) p,
 div:first-child div:nth-of-type(2) a {
   color: rgb(135, 59, 126);
 }
+div:first-child div:nth-of-type(1) i,
+div:first-child div:nth-of-type(1) p,
+div:first-child div:nth-of-type(1) a,
 div:first-child div:nth-of-type(2) i:hover,
 div:first-child div:nth-of-type(2) p:hover,
 div:first-child div:nth-of-type(2) a:hover {
@@ -128,5 +120,27 @@ div .fa-github-square {
   color: black;
 }
 
-/* TODO responsive */
+/* Responsive */
+@media screen and (max-width: 590px) {
+  div h2 {
+    padding-top: 2rem;
+  }
+  div:first-child {
+    display: block;
+    padding-bottom: 2rem;
+    height: 57vh;
+  }
+  div:first-child div {
+    width: 14rem;
+    margin: 0 auto 1rem auto;
+  }
+
+  div .social {
+    margin-top: 4rem;
+  }
+
+  div p:nth-of-type(1) {
+    width: 40%;
+  }
+}
 </style>
