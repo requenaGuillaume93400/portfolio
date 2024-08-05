@@ -63,6 +63,7 @@ h1 span {
   padding-top: 1rem;
 }
 
+/* TODO this class is duplicated in centre d'interets */
 .flex-container {
   padding: 1rem 0;
   display: flex;

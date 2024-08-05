@@ -1,24 +1,45 @@
 <template>
-  <figure>
-    <img :src="source" :alt="alt" loading="lazy" />
-    <figcaption>{{ symbol.title }}</figcaption>
-  </figure>
+  <h2>Centres d'intêrets</h2>
+  <article class="flex-container hidden-left">
+    <SymbolComponent
+      v-for="symbol in symbols"
+      :key="symbol.alt"
+      :symbol="symbol"
+    />
+  </article>
 </template>
 
 <script>
-export default {
-  props: ["symbol"],
-  setup(props) {
-    const source = "./images/" + props.symbol.image;
-    const alt = "Logo de " + props.symbol.alt;
+import SymbolComponent from "./shared/SymbolComponent.vue";
 
-    return { source, alt };
+export default {
+  components: { SymbolComponent },
+  setup() {
+    const symbols = [
+      { alt: "Image d'haltères", title: "Sport", image: "sport.jpg" },
+      {
+        alt: "Image d'une manette de console",
+        title: "Jeux video",
+        image: "game.jpg",
+      },
+      { alt: "Image d'une batterie", title: "Musique", image: "music.jpg" },
+      { alt: "Image du manga Berserk", title: "Manga", image: "manga.png" },
+    ];
+
+    return { symbols };
   },
 };
 </script>
 
 <style scoped>
-/* TODO css is duplicated in Centres d'interets */
+/* TODO css is PARTIALLY duplicated HeaderComponent */
+.flex-container {
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+/* TODO css is duplicated in SymbolComponent */
 figure {
   margin: 0.5rem;
 }

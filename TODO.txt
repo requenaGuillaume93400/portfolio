@@ -6,7 +6,7 @@ Changement par rapport a l'actuel :
 
   1)Fond blanc (plus d'image)
   2)La Mention pour le boutton, en faire une modale classique (click open/close), pas au hover
-  3)Retirer le block ancienne vie pro (le spécifier vite fait dans la partie témoignages)
+  3)Retirer le block ancienne vie pro (le spécifier vite fait dans la partie "Plus" témoignages)
   4)Mettre les témoignages en dernier dans le block Plus
 
   DONE
