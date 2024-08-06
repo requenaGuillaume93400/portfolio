@@ -17,6 +17,7 @@
     <HobbiesComponent />
 
     <!-- 4) Plus Component -->
+    <MoreComponent />
 
     <!-- 5) Modal Component -->
   </main>
@@ -32,6 +33,7 @@ import HeaderComponent from "./components/shared/HeaderComponent";
 import FooterComponent from "./components/shared/FooterComponent";
 import HobbiesComponent from "./components/HobbiesComponent";
 import TrainingComponent from "./components/TrainingComponent";
+import MoreComponent from "./components/MoreComponent";
 
 export default {
   name: "App",
@@ -40,6 +42,7 @@ export default {
     FooterComponent,
     HobbiesComponent,
     TrainingComponent,
+    MoreComponent,
   },
 };
 </script>
