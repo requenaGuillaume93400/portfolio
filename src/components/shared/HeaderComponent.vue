@@ -71,6 +71,7 @@ h1 span {
   justify-content: space-evenly;
   position: absolute;
   bottom: 3rem;
+  color: #fff;
 }
 
 @media screen and (max-width: 843px) {

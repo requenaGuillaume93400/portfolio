@@ -9,6 +9,7 @@
 
     <!-- 1) Exercices / Réalisations Component -->
     <!-- Le plus difficile car du tri (back, front, framework) voir une recherche a mettre en place -->
+    <ExercicesComponent />
 
     <!-- 2) Formation Component -->
     <TrainingComponent />
@@ -34,6 +35,7 @@ import FooterComponent from "./components/shared/FooterComponent";
 import HobbiesComponent from "./components/HobbiesComponent";
 import TrainingComponent from "./components/TrainingComponent";
 import MoreComponent from "./components/MoreComponent";
+import ExercicesComponent from "./components/ExercicesComponent";
 
 export default {
   name: "App",
@@ -43,6 +45,7 @@ export default {
     HobbiesComponent,
     TrainingComponent,
     MoreComponent,
+    ExercicesComponent,
   },
 };
 </script>
@@ -69,7 +72,6 @@ or for every style block in components ? */
   width: 100%;
   /* TODO a virer le height car le header aura un 100 vh */
   height: 100vh;
-  background-color: rgb(255, 250, 250);
 }
 
 header {
@@ -78,6 +80,12 @@ header {
   /* Gros probleme de style avec le retrait de l'image de fond et le fond blanc ... */
   background-color: rgba(0, 0, 0, 0.4);
   position: relative;
+}
+
+body {
+  width: 100%;
+  background: url("./assets/images/binary.png") center/cover;
+  background-attachment: fixed;
 }
 
 /*  */
@@ -233,48 +241,40 @@ main article:nth-of-type(1) .gitLinks p:not(.desc):hover a {
 main article:nth-of-type(2) figure:nth-of-type(6) img {
   background-color: #fff;
 }
-main article:nth-of-type(3),
+/* TODO main article:nth-of-type(3) === anciennement Formation, maintenant c'est le 2 */
+/* le 2 a disparu (techno, mis dans le header) */
 main article:nth-of-type(4) {
   padding: 1.2rem 0 1rem 0;
 }
-main article:nth-of-type(3) #internship,
 main article:nth-of-type(4) #internship {
   width: 100px;
   margin-left: 0;
 }
-main article:nth-of-type(3) a,
 main article:nth-of-type(4) a {
   height: 5rem;
 }
-main article:nth-of-type(3) img,
 main article:nth-of-type(4) img {
   width: 100px;
-  opacity: 0;
+  /* TODO opacity: 0; */
 }
-main article:nth-of-type(3) .container,
 main article:nth-of-type(4) .container {
   width: 95%;
   margin: 0 auto;
   display: flex;
 }
-main article:nth-of-type(3) .container:not(:nth-of-type(1)),
 main article:nth-of-type(4) .container:not(:nth-of-type(1)) {
   margin-top: 0.6rem;
 }
-main article:nth-of-type(3) .container div,
 main article:nth-of-type(4) .container div {
   margin-left: 4rem;
 }
-main article:nth-of-type(3) .container div p:first-child,
 main article:nth-of-type(4) .container div p:first-child {
   font-weight: bold;
 }
-main article:nth-of-type(3) .container ul,
 main article:nth-of-type(4) .container ul {
   margin-left: 2rem;
   list-style-type: "- ";
 }
-main article:nth-of-type(3) .container #mention,
 main article:nth-of-type(4) .container #mention {
   width: 9rem;
   margin-left: 0;
@@ -428,5 +428,49 @@ main .show-left {
 
 footer {
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 843px) {
+  body {
+    background: url("./assets/images/binary-tablet.png");
+    background-attachment: fixed;
+    background-position: center;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  header h1 span,
+  header h1 span:nth-of-type(2) {
+    font-size: 2rem;
+  }
+  header div img {
+    width: 70px;
+  }
+  header div img:nth-of-type(5) {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body {
+    background: url("./assets/images/binary-mobile.png");
+    background-attachment: fixed;
+    background-position: center;
+  }
+  main article:nth-of-type(1) div:nth-of-type(4) {
+    background: url("./assets/images/fake-mobile.png");
+  }
+  main article:nth-of-type(3) .container #modal-mention {
+    width: 90%;
+    top: 83%;
+    left: 0;
+    background-position: left;
+    margin-left: 5%;
+  }
+  main article ul li {
+    width: 140px;
+  }
+  main article .cv {
+    width: 140px;
+  }
 }
 </style>

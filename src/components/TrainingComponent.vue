@@ -1,4 +1,5 @@
 <template>
+  <h2>Formation</h2>
   <article>
     <div class="container">
       <div id="internship">
@@ -165,4 +166,66 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+article {
+  padding: 1.2rem 0 1rem 0;
+}
+article #internship,
+article #internship {
+  width: 100px;
+  margin-left: 0;
+}
+/* article a {
+  height: 5rem;
+} */
+/* article img {
+  width: 100px; */
+/* TODO opacity: 0; */
+/* } */
+article .container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+article .container:not(:nth-of-type(1)),
+article .container:not(:nth-of-type(1)) {
+  margin-top: 0.6rem;
+}
+article .container div,
+article .container div {
+  margin-left: 4rem;
+}
+article .container div p:first-child,
+article .container div p:first-child {
+  font-weight: bold;
+}
+article .container ul,
+article .container ul {
+  margin-left: 2rem;
+  list-style-type: "- ";
+}
+article .container #mention,
+article .container #mention {
+  width: 9rem;
+  margin-left: 0;
+  padding: 4px 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 2rem;
+  background: rgba(197, 226, 253, 0.8);
+  cursor: pointer;
+}
+article .container #modal-mention,
+article .container #modal-mention {
+  visibility: hidden;
+  width: 80%;
+  height: 400px;
+  background: url("../assets/images/mention.png") center/cover;
+  position: absolute;
+  left: 5%;
+  z-index: 20;
+}
+/* img {
+  width: 100%;
+} */
+</style>
