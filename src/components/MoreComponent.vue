@@ -55,22 +55,22 @@
     <p>Ce que mes anciens collaborateurs disent de moi :</p>
     <ul>
       <li>
-        <a href="./assets/pdf/dir.pdf" target="_blank" title="Consultez le PDF"
+        <a href="./pdf/dir.pdf" target="_blank" title="Consultez le PDF"
           ><span>Supérieur</span> Directeur des opérations</a
         >
       </li>
       <li>
-        <a href="./assets/pdf/cds.pdf" target="_blank" title="Consultez le PDF"
+        <a href="./pdf/cds.pdf" target="_blank" title="Consultez le PDF"
           ><span>Supérieur</span> Chef de site</a
         >
       </li>
       <li>
-        <a href="./assets/pdf/cdp.pdf" target="_blank" title="Consultez le PDF"
+        <a href="./pdf/cdp.pdf" target="_blank" title="Consultez le PDF"
           ><span>Collègue</span> Chef de poste</a
         >
       </li>
       <li>
-        <a href="./assets/pdf/opv.pdf" target="_blank" title="Consultez le PDF"
+        <a href="./pdf/opv.pdf" target="_blank" title="Consultez le PDF"
           ><span>Subordonné</span> Opérateur video</a
         >
       </li>

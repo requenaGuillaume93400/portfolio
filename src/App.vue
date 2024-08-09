@@ -36,6 +36,7 @@ import HobbiesComponent from "./components/HobbiesComponent";
 import TrainingComponent from "./components/TrainingComponent";
 import MoreComponent from "./components/MoreComponent";
 import ExercicesComponent from "./components/ExercicesComponent";
+import { onMounted, onBeforeUnmount } from "vue";
 
 export default {
   name: "App",
@@ -46,6 +47,81 @@ export default {
     TrainingComponent,
     MoreComponent,
     ExercicesComponent,
+  },
+  setup() {
+    const handleScroll = () => {
+      const scrollable =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const titles = document.querySelectorAll("h2");
+      const articles = document.querySelectorAll("article");
+      const images = document.querySelectorAll(".container a img");
+      let progress = (Math.ceil(window.scrollY) * 100) / scrollable;
+      let timer = 0;
+      let startTimer;
+
+      const showTitle = (progressPercentage, number) => {
+        if (
+          progress >= progressPercentage &&
+          !titles[number].classList.contains("show-right")
+        ) {
+          titles[number].classList.add("show-right");
+        }
+      };
+
+      const showArticle = (progressPercentage, number) => {
+        if (
+          progress >= progressPercentage &&
+          !articles[number].classList.contains("show-left")
+        ) {
+          articles[number].classList.add("show-left");
+        }
+      };
+
+      // First h2 & article
+      showTitle(2, 0);
+      showArticle(2, 0);
+
+      showTitle(28, 1);
+      showArticle(29, 1);
+
+      showTitle(31, 2);
+      showArticle(33, 2);
+
+      showTitle(38, 3);
+      showArticle(39, 3);
+
+      // showTitle(44, 4);
+      // showArticle(45, 4);
+
+      // showTitle(73, 5);
+      // showArticle(74, 5);
+
+      const fadeImage = () => {
+        progress = (Math.ceil(window.scrollY) * 100) / scrollable;
+
+        progress < 44 ? (startTimer = 4000) : (startTimer = 2000);
+
+        setTimeout(function () {
+          images.forEach(function (image) {
+            timer += 800;
+
+            setTimeout(function () {
+              image.classList.add("fade");
+            }, timer);
+          });
+        }, startTimer);
+      };
+
+      fadeImage();
+    };
+
+    onMounted(() => {
+      window.addEventListener("scroll", handleScroll);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener("scroll", handleScroll);
+    });
   },
 };
 </script>
@@ -77,18 +153,17 @@ or for every style block in components ? */
 header {
   width: 100%;
   height: 100vh;
-  /* Gros probleme de style avec le retrait de l'image de fond et le fond blanc ... */
   background-color: rgba(0, 0, 0, 0.4);
   position: relative;
 }
 
 body {
   width: 100%;
+  /* TODO voir pour changer l'image de fond ? */
   background: url("./assets/images/binary.png") center/cover;
   background-attachment: fixed;
 }
 
-/*  */
 main article {
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -97,15 +172,10 @@ main h2 {
   width: 125%;
   margin: 5rem auto 0.4rem auto;
   font-size: 2.2rem;
-  /* color: #fff; */
   color: #3f2222;
-  background-color: aqua;
-  /* TODO */
-  /* text-align: center; */
   z-index: -1;
   position: relative;
 }
-/* */
 
 /* MAIN */
 main {
@@ -241,8 +311,6 @@ main article:nth-of-type(1) .gitLinks p:not(.desc):hover a {
 main article:nth-of-type(2) figure:nth-of-type(6) img {
   background-color: #fff;
 }
-/* TODO main article:nth-of-type(3) === anciennement Formation, maintenant c'est le 2 */
-/* le 2 a disparu (techno, mis dans le header) */
 main article:nth-of-type(4) {
   padding: 1.2rem 0 1rem 0;
 }
@@ -255,7 +323,6 @@ main article:nth-of-type(4) a {
 }
 main article:nth-of-type(4) img {
   width: 100px;
-  /* TODO opacity: 0; */
 }
 main article:nth-of-type(4) .container {
   width: 95%;
@@ -285,7 +352,8 @@ main article:nth-of-type(4) .container #mention {
   background: rgba(197, 226, 253, 0.8);
   cursor: pointer;
 }
-/* main article:nth-of-type(3) .container #modal-mention,
+/* TODO
+main article:nth-of-type(3) .container #modal-mention,
 main article:nth-of-type(4) .container #modal-mention {
   visibility: hidden;
   width: 80%;
@@ -406,13 +474,6 @@ main article .cv:hover {
   transition: 0.6s;
   color: rgb(0, 0, 0);
 }
-/* TODO transform */
-/* main h2 {
-  transform: translateX(100%);
-}
-main article {
-  transform: translateX(-100%);
-} */
 main .show-right {
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -471,6 +532,38 @@ footer {
   }
   main article .cv {
     width: 140px;
+  }
+}
+
+@keyframes switch-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-10%);
+  }
+}
+@keyframes switch-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.fade {
+  animation-duration: 2.5s;
+  animation-name: fade;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 </style>

@@ -133,6 +133,7 @@
           <li>Utilisation d'API et du LocalStorage en JS</li>
         </ul>
         <p>Avril 2021 - Août 2021</p>
+        <!-- TODO Modal component -->
         <div id="mention">Mention</div>
         <div id="modal-mention"></div>
       </div>
@@ -166,7 +167,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 article {
   padding: 1.2rem 0 1rem 0;
 }
@@ -175,13 +176,6 @@ article #internship {
   width: 100px;
   margin-left: 0;
 }
-/* article a {
-  height: 5rem;
-} */
-/* article img {
-  width: 100px; */
-/* TODO opacity: 0; */
-/* } */
 article .container {
   width: 95%;
   margin: 0 auto;
@@ -225,7 +219,7 @@ article .container #modal-mention {
   left: 5%;
   z-index: 20;
 }
-/* img {
-  width: 100%;
-} */
+img {
+  opacity: 0;
+}
 </style>
