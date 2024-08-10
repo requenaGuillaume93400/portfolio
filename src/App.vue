@@ -14,13 +14,11 @@
     <!-- 2) Formation Component -->
     <TrainingComponent />
 
-    <!-- 3) DONE - TODO CSS - Block centre d'interets -->
+    <!-- 3) Centre d'interets -->
     <HobbiesComponent />
 
     <!-- 4) Plus Component -->
     <MoreComponent />
-
-    <!-- 5) Modal Component -->
   </main>
 
   <!-- 6) Footer Component -->
@@ -90,12 +88,6 @@ export default {
       showTitle(38, 3);
       showArticle(39, 3);
 
-      // showTitle(44, 4);
-      // showArticle(45, 4);
-
-      // showTitle(73, 5);
-      // showArticle(74, 5);
-
       const fadeImage = () => {
         progress = (Math.ceil(window.scrollY) * 100) / scrollable;
 
@@ -162,19 +154,6 @@ body {
   /* TODO voir pour changer l'image de fond ? */
   background: url("./assets/images/binary.png") center/cover;
   background-attachment: fixed;
-}
-
-main article {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-main h2 {
-  width: 125%;
-  margin: 5rem auto 0.4rem auto;
-  font-size: 2.2rem;
-  color: #3f2222;
-  z-index: -1;
-  position: relative;
 }
 
 /* MAIN */
@@ -342,7 +321,7 @@ main article:nth-of-type(4) .container ul {
   margin-left: 2rem;
   list-style-type: "- ";
 }
-main article:nth-of-type(4) .container #mention {
+/* main article:nth-of-type(4) .container #mention {
   width: 9rem;
   margin-left: 0;
   padding: 4px 10px;
@@ -351,7 +330,7 @@ main article:nth-of-type(4) .container #mention {
   border-radius: 2rem;
   background: rgba(197, 226, 253, 0.8);
   cursor: pointer;
-}
+} */
 /* TODO
 main article:nth-of-type(3) .container #modal-mention,
 main article:nth-of-type(4) .container #modal-mention {

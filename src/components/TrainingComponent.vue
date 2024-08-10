@@ -133,9 +133,7 @@
           <li>Utilisation d'API et du LocalStorage en JS</li>
         </ul>
         <p>Avril 2021 - Août 2021</p>
-        <!-- TODO Modal component -->
-        <div id="mention">Mention</div>
-        <div id="modal-mention"></div>
+        <MentionModalComponent />
       </div>
     </div>
 
@@ -164,14 +162,17 @@
 </template>
 
 <script>
-export default {};
+import MentionModalComponent from "./MentionModalComponent";
+
+export default {
+  components: { MentionModalComponent },
+};
 </script>
 
 <style scoped>
 article {
   padding: 1.2rem 0 1rem 0;
 }
-article #internship,
 article #internship {
   width: 100px;
   margin-left: 0;
@@ -181,43 +182,18 @@ article .container {
   margin: 0 auto;
   display: flex;
 }
-article .container:not(:nth-of-type(1)),
 article .container:not(:nth-of-type(1)) {
   margin-top: 0.6rem;
 }
-article .container div,
 article .container div {
   margin-left: 4rem;
 }
-article .container div p:first-child,
 article .container div p:first-child {
   font-weight: bold;
 }
-article .container ul,
 article .container ul {
   margin-left: 2rem;
   list-style-type: "- ";
-}
-article .container #mention,
-article .container #mention {
-  width: 9rem;
-  margin-left: 0;
-  padding: 4px 10px;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 2rem;
-  background: rgba(197, 226, 253, 0.8);
-  cursor: pointer;
-}
-article .container #modal-mention,
-article .container #modal-mention {
-  visibility: hidden;
-  width: 80%;
-  height: 400px;
-  background: url("../assets/images/mention.png") center/cover;
-  position: absolute;
-  left: 5%;
-  z-index: 20;
 }
 img {
   opacity: 0;
