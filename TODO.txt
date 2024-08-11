@@ -4,9 +4,16 @@ Avec Vuejs
 
 Changement par rapport a l'actuel : 
 
+  TODO - a choisir une autre image ? ....
   1)Fond blanc (plus d'image)
+
+  DONE
   2)La Mention pour le boutton, en faire une modale classique (click open/close), pas au hover
+
+  DONE
   3)Retirer le block ancienne vie pro (le spécifier vite fait dans la partie "Plus" témoignages)
+
+  DONE
   4)Mettre les témoignages en dernier dans le block Plus
 
   DONE
@@ -21,6 +28,9 @@ Afficher le résultat de la recherche / selection dans le 1er block ?
 Et/Ou Faire une navigation ? 
 Et/Ou Tous charger comme maintenant mais avec une main.png au lieu de carrousel.png ?
       Mais ça obligerait a cliquer pour en voir plus ? pas fan 
+
+    6) Remove css !important
+    7) Restore responsive
 
 
 Ce qui ne change pas : 

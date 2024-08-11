@@ -1,6 +1,6 @@
 <template>
   <div class="mention" @click="toggleModal">Mention</div>
-  <div v-if="isShown" class="modal" @click="toggleModal" title="Close">
+  <div v-if="isShown" class="modal" @click="toggleModal" title="Fermer">
     <div class="modal-mention"></div>
   </div>
 </template>

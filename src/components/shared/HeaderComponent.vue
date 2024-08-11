@@ -3,7 +3,6 @@
     Guillaume Requena
     <span>Développeur Web</span>
   </h1>
-  <!-- TODO flex container centre d'interet -->
   <div class="flex-container">
     <SymbolComponent
       v-for="symbol in symbols"
@@ -36,7 +35,7 @@ export default {
       { alt: "Postman", title: "Postman", image: "postman.png" },
       { alt: "React", title: "React", image: "react.png" },
       { alt: "JavaScript", title: "JavaScript", image: "javascript.png" },
-      // Mettre un p pour apiplatform
+      // TODO Mettre un p pour apiplatform ? a decider
       { alt: "ApiPlatform", title: "ApiPlatform", image: "apiplatform.png" },
       { alt: "Bootstrap", title: "Bootstrap", image: "bootstrap.png" },
     ];
@@ -48,7 +47,7 @@ export default {
 
 <style scoped>
 h1 {
-  color: #fff;
+  color: var(--custom-white);
   font-size: 4rem;
   text-align: center;
   width: 90%;
@@ -63,15 +62,10 @@ h1 span {
   padding-top: 1rem;
 }
 
-/* TODO this class is duplicated in centre d'interets */
 .flex-container {
-  padding: 1rem 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
   position: absolute;
   bottom: 3rem;
-  color: #fff;
+  color: var(--custom-white);
 }
 
 @media screen and (max-width: 843px) {

@@ -1,0 +1,275 @@
+/* TODO Utilisez des formats modernes comme WebP pour les images si possible, 
+et assurez-vous que les images sont compressées. */
+/* TODO j'ai cassé le responsive du footer and header img responsive */
+/* and first separator line in first article */
+/* and image display none resposnive */
+/* and responsive of testimonies + codewars logo */
+/* ===================== GLOBAL SETTINGS ===================== */
+@font-face {
+  font-family: "comfortaa";
+  src: url("../fonts/comfortaa/Comfortaa-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --custom-black: rgb(0, 0, 0);
+  --custom-white: #fff;
+  --green-background: #27ab5e;
+  --transparent-black: rgba(0, 0, 0, 0.43);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "comfortaa", "Helvetica", "Arial", "sans-serif";
+}
+
+#app,
+header,
+body {
+  width: 100%;
+}
+
+/* ===================== Specific CSS rules ===================== */
+
+header {
+  height: 100vh;
+  background-color: var(--transparent-black);
+  position: relative;
+}
+
+body {
+  /* TODO voir pour changer l'image de fond ? */
+  background: url("../images/binary.png") center/cover fixed;
+}
+
+main {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+main h2 {
+  width: 125%;
+  margin: 5rem auto 0.4rem auto;
+  font-size: 2.2rem;
+  color: var(--custom-white);
+  text-align: center;
+  z-index: -1;
+  position: relative;
+}
+main p {
+  line-height: 1.5;
+}
+main img {
+  border-radius: 25%;
+}
+main .separator {
+  width: 80%;
+  height: 2px;
+  margin: 20px auto;
+  border-bottom: 2px dashed rgba(228, 228, 228, 0.897);
+}
+main article {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--transparent-black);
+  color: var(--custom-white);
+  border-radius: 1rem;
+  padding: 0 0.5rem;
+}
+main article.flex-container figure figcaption {
+  text-align: center;
+}
+main article.flex-container {
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+main article.flex-container figure {
+  margin: 0.5rem;
+}
+main article.flex-container figure img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px 0px var(--custom-black);
+}
+main article a img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+main article .cv {
+  display: block;
+  width: 20%;
+  margin: 0.5rem auto 0 auto;
+  padding: 1.2rem 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-color: var(--green-background);
+  color: var(--custom-white);
+  font-weight: bold;
+  text-decoration: none;
+}
+main article .cv:hover {
+  border: 2px solid var(--custom-black);
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: 0.6s;
+  color: var(--custom-black);
+}
+main .show-right,
+main .show-left {
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+main .show-right {
+  animation-name: switch-right;
+}
+main .show-left {
+  animation-name: switch-left;
+}
+
+/* Shared by HobbiesComponent and HeaderComponent */
+.flex-container {
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+/* Shared by HobbiesComponent and SymbolComponent */
+figure {
+  margin: 0.5rem;
+}
+figure img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 1);
+}
+figcaption {
+  text-align: center;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media screen and (max-width: 1115px) {
+  figure img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  figure img {
+    width: 70px;
+    height: 70px;
+  }
+  figcaption {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 843px) {
+  body {
+    background: url("../images/binary-tablet.png") center fixed;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  header h1 span,
+  header h1 span:nth-of-type(2) {
+    font-size: 2rem;
+  }
+  header div img {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  body {
+    background: url("../images/binary-mobile.png") center fixed;
+  }
+  main article ul li {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 597px) {
+  figure img {
+    width: 60px;
+    height: 60px;
+  }
+
+  figcaption {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  figure img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  figure img {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+@media screen and (max-width: 489) {
+  figure img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* ===================== ANIMATIONS ===================== */
+
+@keyframes switch-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes switch-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.fade {
+  animation-duration: 2.5s;
+  animation-name: fade;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -12,11 +12,7 @@
     <div>
       <p>jQuery</p>
 
-      <p>Bootstrap</p>
-
       <p>REGEX</p>
-
-      <p>Url rewriting</p>
     </div>
 
     <div class="separator"></div>
@@ -52,6 +48,7 @@
 
     <div class="separator"></div>
 
+    <p>Ancienne vie pro</p>
     <p>Ce que mes anciens collaborateurs disent de moi :</p>
     <ul>
       <li>
@@ -77,10 +74,6 @@
     </ul>
   </article>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 article {
@@ -109,7 +102,6 @@ article ul li span {
   padding: 0.3rem;
   font-weight: bold;
 }
-/*  */
 article .cv {
   display: block;
   width: 20%;
@@ -119,12 +111,10 @@ article .cv {
   cursor: pointer;
   border: 2px solid transparent;
   background-color: #27ab5e;
-  color: #fff;
+  color: var(--custom-white);
   font-weight: bold;
   text-decoration: none;
 }
-/*  */
-/* Témoignages */
 article ul li:nth-of-type(1),
 article ul li:nth-of-type(2) {
   background-color: orange;
@@ -135,7 +125,6 @@ article ul li:nth-of-type(3) {
 article ul li:nth-of-type(4) {
   background-color: rgb(11, 102, 195);
 }
-/* Témoignages */
 article ul li:hover {
   border: 2px solid black;
   background-color: rgba(255, 255, 255, 0.85);
@@ -143,7 +132,6 @@ article ul li:hover {
   color: rgb(0, 0, 0);
 }
 article ul li a {
-  /* display: block; */
   color: inherit;
   text-decoration: none;
 }
@@ -175,11 +163,6 @@ p {
   line-height: 1.5;
 }
 
-/* TODO check if need css class realy */
-.cv {
-  height: 2rem;
-}
-
 .codewars {
   opacity: 1;
 }
@@ -189,5 +172,11 @@ p {
   width: 5%;
   margin: 1rem auto;
   transform: translateX(-50%);
+}
+
+@media screen and (max-width: 690px) {
+  main article .cv {
+    width: 140px;
+  }
 }
 </style>
