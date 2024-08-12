@@ -169,14 +169,19 @@ p {
 
 .codewarsp a {
   display: block;
-  width: 5%;
+  width: 109px;
   margin: 1rem auto;
-  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 690px) {
   main article .cv {
     width: 140px;
+  }
+}
+
+@media screen and (max-width: 647px) {
+  article ul li {
+    width: 40%;
   }
 }
 </style>

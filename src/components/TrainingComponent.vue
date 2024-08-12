@@ -2,7 +2,7 @@
   <h2>Formation</h2>
   <article>
     <div class="container">
-      <div id="internship">
+      <div class="internship">
         <a href="https://openclassrooms.com/fr/" target="_blank">
           <img
             src="/images/open.png"
@@ -173,7 +173,7 @@ export default {
 article {
   padding: 1.2rem 0 1rem 0;
 }
-article #internship {
+article .container .internship {
   width: 100px;
   margin-left: 0;
 }
@@ -197,5 +197,14 @@ article .container ul {
 }
 img {
   opacity: 0;
+}
+
+@media screen and (max-width: 430px) {
+  article a {
+    display: none;
+  }
+  .container .internship {
+    display: none;
+  }
 }
 </style>

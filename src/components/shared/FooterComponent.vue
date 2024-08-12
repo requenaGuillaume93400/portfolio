@@ -135,10 +135,6 @@ div .fa-github-square {
     margin: 0 auto 1rem auto;
   }
 
-  div .social {
-    margin-top: 4rem;
-  }
-
   div p:nth-of-type(1) {
     width: 40%;
   }

@@ -4,6 +4,8 @@ et assurez-vous que les images sont compressées. */
 /* and first separator line in first article */
 /* and image display none resposnive */
 /* and responsive of testimonies + codewars logo */
+/* Article 3 devient le 2 */
+/* Article 6 devient le 4 */
 /* ===================== GLOBAL SETTINGS ===================== */
 @font-face {
   font-family: "comfortaa";
@@ -191,9 +193,6 @@ footer {
   header h1 span,
   header h1 span:nth-of-type(2) {
     font-size: 2rem;
-  }
-  header div img {
-    width: 70px;
   }
 }
 

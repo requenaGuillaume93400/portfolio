@@ -76,13 +76,6 @@ h1 span {
   h1 span:nth-of-type(2) {
     font-size: 2rem;
   }
-
-  div img {
-    width: 70px;
-  }
-  div:nth-of-type(5) {
-    width: 70px;
-  }
 }
 
 @media screen and (max-width: 570px) {
