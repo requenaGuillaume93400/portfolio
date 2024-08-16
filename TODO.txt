@@ -1,40 +1,22 @@
 
-Portfolio en Single Page Application
-Avec Vuejs
+Portfolio en Vuejs
 
 Changement par rapport a l'actuel : 
 
   TODO - a choisir une autre image ? ....
   1)Fond blanc (plus d'image)
 
-  DONE
-  2)La Mention pour le boutton, en faire une modale classique (click open/close), pas au hover
+  2) Remove css !important
 
-  DONE
-  3)Retirer le block ancienne vie pro (le spécifier vite fait dans la partie "Plus" témoignages)
-
-  DONE
-  4)Mettre les témoignages en dernier dans le block Plus
-
-  DONE
-  5)Retirer le block technologie utilisées (placer les logo des technos dans le header avec mon nom a la place)
-
-  5)Trier les exercices / réalisations 
+  3)Trier les exercices / réalisations 
      par type : Front-end, Back-end
      par language
      par framework
+  PAR TAG (html, css, php, sf, etc etc..)
+  Chaque exercice aura un/plusieurs tag(s)
 
 Afficher le résultat de la recherche / selection dans le 1er block ?
 Et/Ou Faire une navigation ? 
 Et/Ou Tous charger comme maintenant mais avec une main.png au lieu de carrousel.png ?
-      Mais ça obligerait a cliquer pour en voir plus ? pas fan 
-
-    6) Remove css !important
-    7) Restore responsive
-
-
-Ce qui ne change pas : 
-
-  Tout le reste, sauf les couleurs potentiellement
-  puisque le fond change
+      Mais ça obligerait a cliquer pour en voir plus ? pas fan     
      

@@ -1,5 +1,4 @@
 <template>
-  <!-- TODO repair responsive -->
   <header>
     <HeaderComponent />
   </header>
