@@ -1,7 +1,7 @@
 <template>
   <h2>Exercices & Réalisations</h2>
   <article>
-    <h3>HTML - CSS - JS</h3>
+    <!-- <h3>HTML - CSS - JS</h3>
     <div></div>
 
     <div></div>
@@ -97,138 +97,67 @@
           >Wordpress - Chalets & Caviar (Site)</a
         >
       </p>
+    </div> -->
+
+    <div v-for="tag in tagList" :key="tag">
+      <input type="checkbox" v-model="techs" :value="tag" />
+      <label :for="tag">{{ tag }}</label>
     </div>
+    <p v-if="techs.length !== 0">selected techs : {{ techs }}</p>
+    <br />
+    <!-- <div v-for="exercise in filteredExercises" :key="exercise.id">
+      {{ exercise.id }}
+      <ExerciseComponent :exercise="exercise" />
+    </div> -->
   </article>
 </template>
 
 <script>
-export default {
-  setup() {
-    // remplacer id par title ?
-    const pathToImages = "../assets/images/";
+import { computed, ref } from "vue";
+import getExercises from "../composables/getExercises";
+// import ExerciseComponent from "../components/ExerciseComponent";
 
-    const exercices = [
-      {
-        id: 1,
-        // image: "../assets/images/restau.png",
-        image: `${pathToImages}restau.png`,
-        mobileImage: null,
-        tags: ["html", "css", "js"],
-        link: null,
-      },
-      {
-        id: 2,
-        // image: "../assets/images/hello.png",
-        image: `${pathToImages}hello.png`,
-        mobileImage: null,
-        tags: ["html", "css"],
-        link: null,
-      },
-      {
-        id: 3,
-        // image: "../assets/images/archi.png",
-        image: `${pathToImages}archi.png`,
-        mobileImage: null,
-        tags: ["html", "css"],
-        link: null,
-      },
-      {
-        id: 4,
-        // image: "../assets/images/fake.png",
-        image: `${pathToImages}fake.png`,
-        // mobileImage: "../assets/images/fake-mobile.png",
-        mobileImage: `${pathToImages}fake-mobile.png`,
-        tags: ["html", "scss", "js", "php", "sql"],
-        link: null,
-      },
-      {
-        id: 5,
-        // image: "../assets/images/blog.png",
-        image: `${pathToImages}blog.png`,
-        mobileImage: null,
-        tags: ["twig", "bootstrap", "symfony"],
-        link: null,
-      },
-      {
-        id: 6,
-        // image: "../assets/images/shop.png",
-        image: `${pathToImages}shop.png`,
-        mobileImage: null,
-        tags: ["twig", "bootstrap", "symfony"],
-        link: null,
-      },
-      {
-        id: 7,
-        // image: "../assets/images/aw.png",
-        image: `${pathToImages}aw.png`,
-        mobileImage: null,
-        tags: ["python"],
-        link: null,
-      },
-      {
-        id: 7,
-        image: null,
-        mobileImage: null,
-        tags: ["python"],
-        link: "https://github.com/requenaGuillaume93400/pdf-merger",
-      },
-      {
-        id: 8,
-        image: null,
-        mobileImage: null,
-        tags: ["python"],
-        link: "https://github.com/requenaGuillaume93400/ytb",
-      },
-      {
-        id: 9,
-        image: "../assets/images/artwork.png",
-        mobileImage: null,
-        tags: ["react", "scss"],
-        link: null,
-      },
-      {
-        id: 10,
-        //  Ajouter image ?
-        image: null,
-        mobileImage: null,
-        tags: ["html", "php", "bootstrap"],
-        link: "https://github.com/requenaGuillaume93400/blogOC",
-      },
-      {
-        id: 11,
-        // Ajouter image ?
-        image: null,
-        mobileImage: null,
-        tags: ["wordpress"],
-        link: "https://guillaumereq.sites.3wa.io/cv/chalets-et-caviar-immobilier/",
-      },
-      {
-        id: 12,
-        // Ajouter image ?
-        image: null,
-        mobileImage: null,
-        tags: ["symfony", "twig", "bootstrap"],
-        link: "https://github.com/requenaGuillaume93400/snowtricks",
-      },
-      {
-        id: 13,
-        // Ajouter image ?
-        image: null,
-        mobileImage: null,
-        tags: ["symfony", "twig", "bootstrap"],
-        link: "https://github.com/requenaGuillaume93400/BileMo",
-      },
-      {
-        id: 14,
-        // Ajouter image ?
-        image: null,
-        mobileImage: null,
-        tags: ["symfony", "twig", "bootstrap"],
-        link: "https://github.com/requenaGuillaume93400/todolist",
-      },
+export default {
+  // components: [ExerciseComponent],
+  setup() {
+    const techs = ref([]);
+
+    const tagList = [
+      "html",
+      "css",
+      "scss",
+      "js",
+      "php",
+      "sql",
+      "twig",
+      "bootstrap",
+      "symfony",
+      "python",
+      "react",
+      "vue",
+      "wordpress",
     ];
 
-    return { exercices };
+    const exercises = getExercises();
+
+    // const filteredExercises = computed(() => {
+    //   return exercises.filter((exercise) => {
+    //     return techs.value.some((i) => exercise.includes(i));
+    //   });
+    // });
+
+    const filteredExercises = computed(() =>
+      exercises.filter((exercise) =>
+        techs.value.some((i) => exercise.tags.includes(i))
+      )
+    );
+
+    return {
+      techs,
+      tagList,
+      exercises,
+      filteredExercises,
+    };
   },
 };
 </script>
@@ -251,7 +180,8 @@ article h3:nth-of-type(1) {
 article .heighter {
   height: 340px !important;
 }
-article div:not(.separator) {
+/* TODO */
+/* article div:not(.separator) {
   cursor: none;
   margin: 1.5rem 0;
   width: 500px;
@@ -260,7 +190,7 @@ article div:not(.separator) {
   border-radius: 10px;
   overflow: hidden;
 }
-article div:not(.separator):nth-of-type(1) {
+ article div:not(.separator):nth-of-type(1) {
   background: url("../assets/images/restau.png");
 }
 article div:not(.separator):nth-of-type(2) {
@@ -335,5 +265,5 @@ article .gitLinks p:not(.desc):hover a {
   article div:nth-of-type(4) {
     background: url("../assets/images/fake-mobile.png");
   }
-}
+} */
 </style>

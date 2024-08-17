@@ -5,7 +5,7 @@
 
   <main>
     <!-- TODO tri (back, front, framework) voir une recherche a mettre en place -->
-    <ExercicesComponent />
+    <ExercisesComponent />
 
     <TrainingComponent />
 
@@ -25,7 +25,7 @@ import FooterComponent from "./components/shared/FooterComponent";
 import HobbiesComponent from "./components/HobbiesComponent";
 import TrainingComponent from "./components/TrainingComponent";
 import MoreComponent from "./components/MoreComponent";
-import ExercicesComponent from "./components/ExercicesComponent";
+import ExercisesComponent from "./components/ExercisesComponent";
 import { onMounted, onBeforeUnmount } from "vue";
 
 export default {
@@ -36,7 +36,7 @@ export default {
     HobbiesComponent,
     TrainingComponent,
     MoreComponent,
-    ExercicesComponent,
+    ExercisesComponent,
   },
   setup() {
     const handleScroll = () => {
