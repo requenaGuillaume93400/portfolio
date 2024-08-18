@@ -92,6 +92,7 @@ const getExercises = () => {
       class: "artwork",
     },
     {
+      // TODO test
       id: 11,
       //  Ajouter image ?
       image: null,
