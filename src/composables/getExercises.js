@@ -11,6 +11,7 @@ const getExercises = () => {
       tags: ["html", "css", "js"],
       link: null,
       class: "restau",
+      text: null,
     },
     {
       id: 2,
@@ -20,6 +21,7 @@ const getExercises = () => {
       tags: ["html", "css"],
       link: null,
       class: "hello",
+      text: null,
     },
     {
       id: 3,
@@ -29,6 +31,7 @@ const getExercises = () => {
       tags: ["html", "css"],
       link: null,
       class: "archi",
+      text: null,
     },
     {
       id: 4,
@@ -39,6 +42,7 @@ const getExercises = () => {
       tags: ["html", "scss", "js", "php", "sql"],
       link: null,
       class: "fake",
+      text: null,
     },
     {
       id: 5,
@@ -48,6 +52,7 @@ const getExercises = () => {
       tags: ["twig", "bootstrap", "symfony"],
       link: null,
       class: "blog",
+      text: null,
     },
     {
       id: 6,
@@ -57,6 +62,7 @@ const getExercises = () => {
       tags: ["twig", "bootstrap", "symfony"],
       link: null,
       class: "shop",
+      text: null,
     },
     {
       id: 7,
@@ -66,6 +72,7 @@ const getExercises = () => {
       tags: ["python"],
       link: null,
       class: "aw",
+      text: null,
     },
     {
       id: 8,
@@ -74,6 +81,7 @@ const getExercises = () => {
       tags: ["python"],
       link: "https://github.com/requenaGuillaume93400/pdf-merger",
       class: "gitLinks",
+      text: "Pdf merger/splitter",
     },
     {
       id: 9,
@@ -82,6 +90,7 @@ const getExercises = () => {
       tags: ["python"],
       link: "https://github.com/requenaGuillaume93400/ytb",
       class: "gitLinks",
+      text: "YouTube video/audio (single and playlist) downloader",
     },
     {
       id: 10,
@@ -90,6 +99,7 @@ const getExercises = () => {
       tags: ["react", "scss"],
       link: null,
       class: "artwork",
+      text: null,
     },
     {
       // TODO test
@@ -100,6 +110,7 @@ const getExercises = () => {
       tags: ["html", "php", "bootstrap"],
       link: "https://github.com/requenaGuillaume93400/blogOC",
       class: "gitLinks",
+      text: "Blog php natif (Github)",
     },
     {
       id: 12,
@@ -109,6 +120,7 @@ const getExercises = () => {
       tags: ["wordpress"],
       link: "https://guillaumereq.sites.3wa.io/cv/chalets-et-caviar-immobilier/",
       class: "gitLinks",
+      text: "Wordpress - Chalets & Caviar (Site)",
     },
     {
       id: 13,
@@ -118,6 +130,7 @@ const getExercises = () => {
       tags: ["symfony", "twig", "bootstrap"],
       link: "https://github.com/requenaGuillaume93400/snowtricks",
       class: "gitLinks",
+      text: "Blog symfony - Snowtricks (Github)",
     },
     {
       id: 14,
@@ -127,6 +140,7 @@ const getExercises = () => {
       tags: ["symfony", "twig", "bootstrap"],
       link: "https://github.com/requenaGuillaume93400/BileMo",
       class: "gitLinks",
+      text: "Api Restfull - BileMo (Github)",
     },
     {
       id: 15,
@@ -136,6 +150,7 @@ const getExercises = () => {
       tags: ["symfony", "twig", "bootstrap"],
       link: "https://github.com/requenaGuillaume93400/todolist",
       class: "gitLinks",
+      text: "Upgrade php/symfony versions and add tests - Todolist (Github)",
     },
   ];
 };

@@ -1,8 +1,17 @@
 <template>
-  <!-- v-if="exercise.class !== 'gitLinks'" -->
-  <div>
-    <div class="test" :class="exercise.class">
-      <!-- {{ exercise.class }} -->
+  <div v-if="exercise.class !== 'gitLinks'">
+    <div class="test" :class="exercise.class"></div>
+    <!-- List tags -->
+    <p>
+      <span class="tag" v-for="tag in exercise.tags" :key="tag"
+        >#{{ tag }}
+      </span>
+    </p>
+  </div>
+  <div v-else>
+    <!-- TODO add style cause it doesnt work -->
+    <div :class="exercise.class">
+      <a :href="exercise.link">{{ exercise.text }}</a>
     </div>
     <!-- List tags -->
     <p>
