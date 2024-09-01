@@ -1,22 +1,9 @@
 <template>
   <div v-if="exercise.class !== 'gitLinks'">
     <div class="test" :class="exercise.class"></div>
-    <!-- List tags -->
     <p>
-      <span class="tag" v-for="tag in exercise.tags" :key="tag"
-        >#{{ tag }}
-      </span>
-    </p>
-  </div>
-  <div v-else>
-    <!-- TODO add style cause it doesnt work -->
-    <div :class="exercise.class">
-      <a :href="exercise.link">{{ exercise.text }}</a>
-    </div>
-    <!-- List tags -->
-    <p>
-      <span class="tag" v-for="tag in exercise.tags" :key="tag"
-        >#{{ tag }}
+      <span class="tag" v-for="tag in exercise.tags" :key="tag">
+        #{{ tag }}
       </span>
     </p>
   </div>
@@ -29,6 +16,10 @@ export default {
 </script>
 
 <style scoped>
+div > p {
+  margin-bottom: 1rem;
+}
+
 .tag {
   background-color: var(--green-background);
   padding: 0.3rem 0.5rem;
@@ -93,45 +84,6 @@ article div:not(.separator):nth-of-type(10),
 article div:not(.separator):nth-of-type(13) {
   background-position: 0%;
 } */
-
-.gitLinks {
-  cursor: pointer;
-  margin: 1.5rem 0;
-  width: initial;
-  height: initial;
-  background-color: var(--green-background);
-  border-radius: 10px;
-  overflow: hidden;
-  /*  */
-  background-position: 0%;
-
-  cursor: initial;
-  background-color: transparent !important;
-  text-align: center;
-}
-.gitLinks .desc {
-  padding: initial;
-  background-color: initial;
-  margin-bottom: initial;
-}
-.gitLinks p {
-  background-color: var(--green-background);
-  margin-bottom: 5px;
-  border-radius: 0.5rem;
-}
-.gitLinks p a {
-  padding: 1rem;
-  color: var(--custom-white);
-  text-decoration: none;
-  display: block;
-}
-.gitLinks p:not(.desc):hover {
-  border: 2px solid var(--custom-black);
-  background-color: rgba(255, 255, 255, 0.85);
-}
-.gitLinks p:not(.desc):hover a {
-  color: var(--custom-black);
-}
 
 /* .test {
   display: block !important;

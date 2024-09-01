@@ -5,23 +5,31 @@
       <input type="checkbox" v-model="techs" :value="tag" />
       <label :for="tag">{{ tag }}</label>
     </div>
-    <!-- <p v-if="techs.length !== 0">selected techs : {{ techs }}</p>
-    <br /> -->
-    <ExerciseComponent
-      v-for="exercise in filteredExercises"
+
+    <ExerciseImageComponent
+      v-for="exercise in filteredExercisesWithImages"
       :key="exercise.id"
       :exercise="exercise"
     />
+
+    <div>
+      <ExerciseButtonComponent
+        v-for="exercise in filteredExercisesLinks"
+        :key="exercise.id"
+        :exercise="exercise"
+      />
+    </div>
   </article>
 </template>
 
 <script>
 import { computed, ref } from "vue";
 import getExercises from "../composables/getExercises";
-import ExerciseComponent from "./ExerciseComponent";
+import ExerciseImageComponent from "./ExerciseImageComponent";
+import ExerciseButtonComponent from "./ExerciseButtonComponent";
 
 export default {
-  components: { ExerciseComponent },
+  components: { ExerciseImageComponent, ExerciseButtonComponent },
   setup() {
     const techs = ref([]);
 
@@ -43,15 +51,19 @@ export default {
 
     const exercises = getExercises();
 
-    // const filteredExercises = computed(() => {
-    //   return exercises.filter((exercise) => {
-    //     return techs.value.some((i) => exercise.includes(i));
-    //   });
-    // });
-
-    const filteredExercises = computed(() =>
+    const filteredExercisesWithImages = computed(() =>
       exercises.filter((exercise) =>
-        techs.value.some((i) => exercise.tags.includes(i))
+        techs.value.some(
+          (i) => exercise.tags.includes(i) && exercise.class !== "gitLinks"
+        )
+      )
+    );
+
+    const filteredExercisesLinks = computed(() =>
+      exercises.filter((exercise) =>
+        techs.value.some(
+          (i) => exercise.tags.includes(i) && exercise.class === "gitLinks"
+        )
       )
     );
 
@@ -59,109 +71,12 @@ export default {
       techs,
       tagList,
       exercises,
-      filteredExercises,
+      filteredExercisesWithImages,
+      filteredExercisesLinks,
     };
   },
 };
 </script>
-
-<!-- <h3>HTML - CSS - JS</h3>
-<div></div>
-
-<div></div>
-
-<div></div>
-
-<div class="separator"></div>
-
-<h3>HTML - SCSS - JS - PHP - SQL</h3>
-
-<div>
-  <a
-    href="https://guillaumereq.sites.3wa.io/cv/fakesecurity/homepage"
-    title="Cliquez pour aller sur le site"
-    target="_blank"
-  ></a>
-</div>
-
-<div class="separator"></div>
-
-<h3>TWIG - BOOTSTRAP - SYMFONY</h3>
-
-<div>
-  <a
-    href="https://guillaumereq.sites.3wa.io/cv/blog/public/index.php"
-    title="Cliquez pour aller sur le site"
-    target="_blank"
-  ></a>
-</div>
-
-<div>
-  <a
-    href="https://guillaumereq.sites.3wa.io/cv/shop/public/index.php"
-    title="Cliquez pour aller sur le site"
-    target="_blank"
-  ></a>
-</div>
-
-<div class="separator"></div>
-
-<h3>Python</h3>
-
-<div></div>
-
-<div class="gitLinks">
-  <p class="desc">Scripts</p>
-  <p>
-    <a href="https://github.com/requenaGuillaume93400/pdf-merger"
-      >Pdf merger/splitter</a
-    >
-  </p>
-  <p>
-    <a href="https://github.com/requenaGuillaume93400/ytb"
-      >YouTube video/audio (single and playlist) downloader</a
-    >
-  </p>
-</div>
-
-<div class="separator"></div>
-
-<h3>React - SCSS</h3>
-
-<div></div>
-
-<div class="separator"></div>
-
-<h3>Projets Openclassrooms</h3>
-
-<div class="gitLinks heighter">
-  <p>
-    <a href="https://github.com/requenaGuillaume93400/todolist"
-      >Upgrade php/symfony versions and add tests - Todolist (Github)</a
-    >
-  </p>
-  <p>
-    <a href="https://github.com/requenaGuillaume93400/BileMo"
-      >Api Restfull - BileMo (Github)</a
-    >
-  </p>
-  <p>
-    <a href="https://github.com/requenaGuillaume93400/snowtricks"
-      >Blog symfony - Snowtricks (Github)</a
-    >
-  </p>
-  <p>
-    <a href="https://github.com/requenaGuillaume93400/blogOC"
-      >Blog php natif (Github)</a
-    >
-  </p>
-  <p>
-    <a
-      href="https://guillaumereq.sites.3wa.io/cv/chalets-et-caviar-immobilier/"
-      >Wordpress - Chalets & Caviar (Site)</a
-    >
-  </p>
-</div> -->
 
 <style scoped>
 article {
