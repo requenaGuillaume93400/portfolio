@@ -117,13 +117,13 @@ article .cv {
 }
 article ul li:nth-of-type(1),
 article ul li:nth-of-type(2) {
-  background-color: orange;
+  background-color: var(--orange-background);
 }
 article ul li:nth-of-type(3) {
   background-color: rgb(135, 59, 126);
 }
 article ul li:nth-of-type(4) {
-  background-color: rgb(11, 102, 195);
+  background-color: var(--blue-background);
 }
 article ul li:hover {
   border: 2px solid black;

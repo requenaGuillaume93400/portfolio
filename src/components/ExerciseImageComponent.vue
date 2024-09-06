@@ -21,7 +21,7 @@ div > p {
 }
 
 .tag {
-  background-color: var(--green-background);
+  background-color: var(--orange-background);
   padding: 0.3rem 0.5rem;
   border-radius: 1rem;
   margin-right: 0.3rem;

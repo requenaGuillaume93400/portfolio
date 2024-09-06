@@ -18,6 +18,8 @@ et assurez-vous que les images sont compressées. */
   --custom-black: rgb(0, 0, 0);
   --custom-white: #fff;
   --green-background: #27ab5e;
+  --blue-background: rgb(11, 102, 195);
+  --orange-background: orange;
   --transparent-black: rgba(0, 0, 0, 0.43);
 }
 

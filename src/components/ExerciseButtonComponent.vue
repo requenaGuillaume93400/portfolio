@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="exercise.class">
     <a :href="exercise.link">
       {{ exercise.text }}
       <br />
@@ -18,13 +18,12 @@ export default {
 </script>
 
 <style scoped>
-/* TODO styliser les boutton git */
 div > p {
   margin-bottom: 1rem;
 }
 
 .tag {
-  background-color: var(--green-background);
+  background-color: var(--orange-background);
   padding: 0.3rem 0.5rem;
   border-radius: 1rem;
   margin-right: 0.3rem;

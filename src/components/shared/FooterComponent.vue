@@ -71,7 +71,7 @@ div:first-child div {
   border-radius: 0.5rem;
 }
 div:first-child div:nth-of-type(1) {
-  border-color: orange;
+  border-color: var(--orange-background);
 }
 div:first-child div:nth-of-type(1) i:hover,
 div:first-child div:nth-of-type(1) p:hover,
@@ -88,7 +88,7 @@ div:first-child div:nth-of-type(1) a,
 div:first-child div:nth-of-type(2) i:hover,
 div:first-child div:nth-of-type(2) p:hover,
 div:first-child div:nth-of-type(2) a:hover {
-  color: orange;
+  color: var(--orange-background);
 }
 div:first-child div a {
   font-weight: bold;
@@ -114,7 +114,7 @@ div i:hover {
   transition: 0.5s;
 }
 div .fa-linkedin {
-  color: rgb(11, 102, 195);
+  color: var(--blue-background);
 }
 div .fa-github-square {
   color: black;
