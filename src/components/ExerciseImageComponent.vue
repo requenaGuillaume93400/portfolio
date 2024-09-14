@@ -1,6 +1,6 @@
 <template>
   <div v-if="exercise.class !== 'gitLinks'">
-    <div class="test" :class="exercise.class"></div>
+    <div class="test" :class="`${exercise.class} ${exercise.animation}`"></div>
     <p>
       <span class="tag" v-for="tag in exercise.tags" :key="tag">
         #{{ tag }}
@@ -42,6 +42,7 @@ div > p {
 }
 .restau {
   background: url("../assets/images/restau.png");
+  /* background-position: 0 10px; */
 }
 .hello {
   background: url("../assets/images/hello.png");

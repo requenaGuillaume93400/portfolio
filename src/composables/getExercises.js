@@ -11,6 +11,7 @@ const getExercises = () => {
       tags: ["html", "css", "js"],
       link: null,
       class: "restau",
+      animation: "restauAnimation",
       text: null,
     },
     {
@@ -21,6 +22,7 @@ const getExercises = () => {
       tags: ["html", "css"],
       link: null,
       class: "hello",
+      animation: "helloAnimation",
       text: null,
     },
     {
@@ -31,6 +33,7 @@ const getExercises = () => {
       tags: ["html", "css"],
       link: null,
       class: "archi",
+      animation: "archiAnimation",
       text: null,
     },
     {
@@ -42,6 +45,7 @@ const getExercises = () => {
       tags: ["html", "scss", "js", "php", "sql"],
       link: null,
       class: "fake",
+      animation: "fakeAnimation",
       text: null,
     },
     {
@@ -52,6 +56,7 @@ const getExercises = () => {
       tags: ["twig", "bootstrap", "symfony"],
       link: null,
       class: "blog",
+      animation: "blogAnimation",
       text: null,
     },
     {
@@ -62,6 +67,7 @@ const getExercises = () => {
       tags: ["twig", "bootstrap", "symfony"],
       link: null,
       class: "shop",
+      animation: "shopAnimation",
       text: null,
     },
     {
@@ -72,6 +78,7 @@ const getExercises = () => {
       tags: ["python"],
       link: null,
       class: "aw",
+      animation: "awAnimation",
       text: null,
     },
     {
@@ -99,6 +106,7 @@ const getExercises = () => {
       tags: ["react", "scss"],
       link: null,
       class: "artwork",
+      animation: "artworkAnimation",
       text: null,
     },
     {
