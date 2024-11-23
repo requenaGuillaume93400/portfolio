@@ -330,3 +330,189 @@ footer {
     background-position: 0% 0%;
   }
 }
+
+.helloAnimation:hover {
+  animation-duration: 40s;
+  animation-name: hello;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hello {
+  from {
+    background-position: 0% -20px;
+  }
+  10% {
+    background-position: 20% -20px;
+  }
+  20% {
+    background-position: 40% -20px;
+  }
+  30% {
+    background-position: 60% -20px;
+  }
+  40% {
+    background-position: 80% -20px;
+  }
+  50% {
+    background-position: 100% -20px;
+  }
+  60% {
+    background-position: 80% -20px;
+  }
+  70% {
+    background-position: 60% -20px;
+  }
+  80% {
+    background-position: 40% -20px;
+  }
+  90% {
+    background-position: 20% -20px;
+  }
+  to {
+    background-position: 0% -20px;
+  }
+}
+
+.archiAnimation:hover {
+  animation-duration: 10s;
+  animation-name: archi;
+  animation-iteration-count: infinite;
+}
+
+@keyframes archi {
+  from {
+    background-position: 0% -20px;
+  }
+  50% {
+    background-position: 100% -20px;
+  }
+  to {
+    background-position: 0% -20px;
+  }
+}
+
+.fakeAnimation:hover {
+  animation-duration: 40s;
+  animation-name: fake;
+  animation-iteration-count: infinite;
+}
+
+/* @keyframes fake {
+  from {
+    background-position: 0% -20px;
+  }
+  5% {
+    background-position: 7.7% -20px;
+  }
+  10% {
+    background-position: 15.4% -20px;
+  }
+  15% {
+    background-position: 23.1% -20px;
+  }
+  20% {
+    background-position: 30.8% -20px;
+  }
+  25% {
+    background-position: 38.5% -20px;
+  }
+  30% {
+    background-position: 46.1% -20px;
+  }
+  35% {
+    background-position: 53.9% -20px;
+  }
+  40% {
+    background-position: 61.6% -20px;
+  }
+  45% {
+    background-position: 69.2% -20px;
+  }
+  50% {
+    background-position: 100% -20px;
+  }
+  to {
+    background-position: 0% -20px;
+  }
+} */
+
+@keyframes fake {
+  from {
+    background-position: 0% -20px;
+  }
+  4% {
+    background-position: 7.7% -20px;
+  }
+  8% {
+    background-position: 15.4% -20px;
+  }
+  12% {
+    background-position: 23.1% -20px;
+  }
+  16% {
+    background-position: 30.8% -20px;
+  }
+  20% {
+    background-position: 38.5% -20px;
+  }
+  24% {
+    background-position: 46.1% -20px;
+  }
+  28% {
+    background-position: 53.9% -20px;
+  }
+  32% {
+    background-position: 61.6% -20px;
+  }
+  36% {
+    background-position: 69.2% -20px;
+  }
+  40% {
+    background-position: 77% -20px;
+  }
+  44% {
+    background-position: 84.6% -20px;
+  }
+  47% {
+    background-position: 92.3% -20px;
+  }
+  50% {
+    background-position: 100% -20px;
+  }
+  54% {
+    background-position: 92.3% -20px;
+  }
+  58% {
+    background-position: 84.6% -20px;
+  }
+  62% {
+    background-position: 77% -20px;
+  }
+  66% {
+    background-position: 69.2% -20px;
+  }
+  70% {
+    background-position: 61.6% -20px;
+  }
+  74% {
+    background-position: 46.1% -20px;
+  }
+  78% {
+    background-position: 38.5% -20px;
+  }
+  82% {
+    background-position: 30.8% -20px;
+  }
+  84% {
+    background-position: 23.1% -20px;
+  }
+  88% {
+    background-position: 15.4% -20px;
+  }
+  93% {
+    background-position: 7.7% -20px;
+  }
+  to {
+    background-position: 0% -20px;
+  }
+}

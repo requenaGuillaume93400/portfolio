@@ -1,9 +1,11 @@
 <template>
   <h2>Exercices & Réalisations</h2>
   <article>
-    <div v-for="tag in tagList" :key="tag">
-      <input type="checkbox" v-model="techs" :value="tag" />
-      <label :for="tag">{{ tag }}</label>
+    <div>
+      <div v-for="tag in tagList" :key="tag" class="checkbox">
+        <input type="checkbox" v-model="techs" :value="tag" />
+        <label :for="tag">{{ tag }}</label>
+      </div>
     </div>
 
     <ExerciseImageComponent
@@ -95,6 +97,14 @@ article h3:nth-of-type(1) {
 }
 article .heighter {
   height: 340px !important;
+}
+article div:nth-of-type(1) {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.checkbox {
+  padding: 5px;
 }
 /* TODO */
 /* article div:not(.separator) {

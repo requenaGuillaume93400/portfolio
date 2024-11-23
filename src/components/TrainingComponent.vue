@@ -73,6 +73,7 @@
           <li>Découverte de Python</li>
           <li>Découverte de Docker</li>
           <li>Découverte de React</li>
+          <li>Découverte de Vuejs</li>
         </ul>
         <p>2022 - 2024</p>
       </div>

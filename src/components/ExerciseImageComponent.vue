@@ -46,9 +46,11 @@ div > p {
 }
 .hello {
   background: url("../assets/images/hello.png");
+  background-position: 0 -20px;
 }
 .archi {
   background: url("../assets/images/archi.png");
+  background-position: 0 -20px;
 }
 
 /* article div:not(.separator):nth-of-type(5) a,
@@ -61,6 +63,7 @@ article div:not(.separator):nth-of-type(8) a {
 
 .fake {
   background: url("../assets/images/fake.png");
+  background-position: 0 -20px;
 }
 .blog {
   background: url("../assets/images/blog.png");
