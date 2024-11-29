@@ -106,7 +106,7 @@ article div:nth-of-type(1) {
   justify-content: space-evenly;
 }
 .checkbox {
-  padding: 5px;
+  padding: 10px;
 }
 .exercise-button {
   display: block;

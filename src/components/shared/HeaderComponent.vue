@@ -32,6 +32,7 @@ export default {
       { alt: "Python", title: "Python", image: "python.png" },
       { alt: "Linux", title: "Linux", image: "linux.png" },
       { alt: "Windows", title: "Windows", image: "windows.png" },
+      { alt: "MacOS", title: "MacOS", image: "macos.png" },
       { alt: "Postman", title: "Postman", image: "postman.png" },
       { alt: "React", title: "React", image: "react.png" },
       { alt: "JavaScript", title: "JavaScript", image: "javascript.png" },
