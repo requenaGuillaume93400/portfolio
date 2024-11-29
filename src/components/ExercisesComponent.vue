@@ -14,12 +14,14 @@
       :exercise="exercise"
     />
 
-    <div>
-      <ExerciseButtonComponent
-        v-for="exercise in filteredExercisesLinks"
-        :key="exercise.id"
-        :exercise="exercise"
-      />
+    <div class="exercise-button">
+      <div>
+        <ExerciseButtonComponent
+          v-for="exercise in filteredExercisesLinks"
+          :key="exercise.id"
+          :exercise="exercise"
+        />
+      </div>
     </div>
   </article>
 </template>
@@ -105,6 +107,10 @@ article div:nth-of-type(1) {
 }
 .checkbox {
   padding: 5px;
+}
+.exercise-button {
+  display: block;
+  flex: 0 0 100%;
 }
 /* TODO */
 /* article div:not(.separator) {
