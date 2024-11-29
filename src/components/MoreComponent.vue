@@ -7,16 +7,6 @@
 
     <div class="separator"></div>
 
-    <p>Notions</p>
-
-    <div>
-      <p>jQuery</p>
-
-      <p>REGEX</p>
-    </div>
-
-    <div class="separator"></div>
-
     <p>
       Curriculum Vitae
       <a
@@ -48,8 +38,8 @@
 
     <div class="separator"></div>
 
-    <p>Ancienne vie pro</p>
     <p>Ce que mes anciens collaborateurs disent de moi :</p>
+    <p>Ancienne vie pro</p>
     <ul>
       <li>
         <a href="./pdf/dir.pdf" target="_blank" title="Consultez le PDF"
