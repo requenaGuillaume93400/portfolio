@@ -76,6 +76,7 @@ article div:not(.separator):nth-of-type(8) a {
 }
 .artwork {
   background: url("../assets/images/artwork.png");
+  background-position: 0 -31px;
 }
 
 /* article div:not(.separator):nth-of-type(1),
@@ -89,6 +90,7 @@ article div:not(.separator):nth-of-type(13) {
   background-position: 0%;
 } */
 
+/* TODO a virer le test ? */
 /* .test {
   display: block !important;
   width: 40px !important;

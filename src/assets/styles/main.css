@@ -88,7 +88,7 @@ main article {
   border-radius: 1rem;
   padding: 0 0.5rem;
 }
-/* TODO */
+/* TODO (a retirer ?) */
 main article:nth-of-type(1) div {
   margin: 0 auto;
 }
@@ -401,45 +401,6 @@ footer {
   animation-iteration-count: infinite;
 }
 
-/* @keyframes fake {
-  from {
-    background-position: 0% -20px;
-  }
-  5% {
-    background-position: 7.7% -20px;
-  }
-  10% {
-    background-position: 15.4% -20px;
-  }
-  15% {
-    background-position: 23.1% -20px;
-  }
-  20% {
-    background-position: 30.8% -20px;
-  }
-  25% {
-    background-position: 38.5% -20px;
-  }
-  30% {
-    background-position: 46.1% -20px;
-  }
-  35% {
-    background-position: 53.9% -20px;
-  }
-  40% {
-    background-position: 61.6% -20px;
-  }
-  45% {
-    background-position: 69.2% -20px;
-  }
-  50% {
-    background-position: 100% -20px;
-  }
-  to {
-    background-position: 0% -20px;
-  }
-} */
-
 @keyframes fake {
   from {
     background-position: 0% -20px;
@@ -518,5 +479,35 @@ footer {
   }
   to {
     background-position: 0% -20px;
+  }
+}
+
+.artworkAnimation:hover {
+  animation-duration: 20s;
+  animation-name: art;
+  animation-iteration-count: infinite;
+}
+
+@keyframes art {
+  from {
+    background-position: 0% -31px;
+  }
+  17% {
+    background-position: 33% -31px;
+  }
+  34% {
+    background-position: 66.6% -31px;
+  }
+  50% {
+    background-position: 100% -31px;
+  }
+  67% {
+    background-position: 66.6% -31px;
+  }
+  84% {
+    background-position: 33% -31px;
+  }
+  to {
+    background-position: 0% -31px;
   }
 }
