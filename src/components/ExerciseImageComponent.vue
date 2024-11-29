@@ -73,6 +73,7 @@ article div:not(.separator):nth-of-type(8) a {
 }
 .aw {
   background: url("../assets/images/aw.png");
+  background-position: 0 -50px;
 }
 .artwork {
   background: url("../assets/images/artwork.png");

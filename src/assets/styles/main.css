@@ -511,3 +511,51 @@ footer {
     background-position: 0% -31px;
   }
 }
+
+.aw:hover {
+  animation-duration: 30s;
+  animation-name: aw;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aw {
+  from {
+    background-position: 0% -50px;
+  }
+  7% {
+    background-position: 15% -50px;
+  }
+  14% {
+    background-position: 30% -50px;
+  }
+  20.5% {
+    background-position: 45% -50px;
+  }
+  30% {
+    background-position: 59% -50px;
+  }
+  40% {
+    background-position: 73% -50px;
+  }
+  49% {
+    background-position: 82% -50px;
+  }
+  58% {
+    background-position: 73% -50px;
+  }
+  68% {
+    background-position: 59% -50px;
+  }
+  78% {
+    background-position: 45% -50px;
+  }
+  87% {
+    background-position: 30% -50px;
+  }
+  95% {
+    background-position: 15% -50px;
+  }
+  to {
+    background-position: 0% -50px;
+  }
+}
