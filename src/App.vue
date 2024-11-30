@@ -4,7 +4,6 @@
   </header>
 
   <main>
-    <!-- TODO tri (back, front, framework) voir une recherche a mettre en place -->
     <ExercisesComponent />
 
     <ExperienceComponent />

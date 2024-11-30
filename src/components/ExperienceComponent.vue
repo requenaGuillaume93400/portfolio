@@ -48,7 +48,14 @@
           </li>
           <li>Code legacy</li>
         </ul>
-        <p>2022 - 2024</p>
+        <p>
+          2022 - 2024
+          <span class="reco">
+            <a href="./pdf/cto.pdf" target="_blank" title="Consultez le PDF">
+              Lettre de recommandation
+            </a>
+          </span>
+        </p>
       </div>
     </div>
   </article>
@@ -82,6 +89,20 @@ article .container ul {
 }
 img {
   opacity: 0;
+}
+.reco {
+  float: right;
+  background-color: orange;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.reco a {
+  color: #fff;
+  text-decoration: none;
+}
+.reco a:hover {
+  color: rgba(0, 0, 0, 0.693);
 }
 
 @media screen and (max-width: 430px) {
