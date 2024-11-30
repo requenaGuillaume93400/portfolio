@@ -71,6 +71,7 @@ article div:not(.separator):nth-of-type(8) a {
 }
 .shop {
   background: url("../assets/images/shop.png");
+  background-position: 0 -40px;
 }
 .aw {
   background: url("../assets/images/aw.png");

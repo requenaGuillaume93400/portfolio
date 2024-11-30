@@ -613,3 +613,57 @@ footer {
     background-position: 0% -31px;
   }
 }
+
+.shop:hover {
+  animation-duration: 30s;
+  animation-name: shop;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shop {
+  from {
+    background-position: 0% -40px;
+  }
+  9% {
+    background-position: 14.2% -40px;
+  }
+  18% {
+    background-position: 28.5% -40px;
+  }
+  26% {
+    background-position: 42.8% -40px;
+  }
+  33% {
+    background-position: 57% -40px;
+  }
+  38% {
+    background-position: 71.5% -40px;
+  }
+  43% {
+    background-position: 85.5% -40px;
+  }
+  50% {
+    background-position: 99.5% -40px;
+  }
+  58% {
+    background-position: 85.5% -40px;
+  }
+  66% {
+    background-position: 71.5% -40px;
+  }
+  74% {
+    background-position: 57% -40px;
+  }
+  82% {
+    background-position: 42.8% -40px;
+  }
+  90% {
+    background-position: 28.5% -40px;
+  }
+  95% {
+    background-position: 14.2% -40px;
+  }
+  to {
+    background-position: 0% -40px;
+  }
+}
