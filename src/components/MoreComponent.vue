@@ -39,6 +39,13 @@
     <div class="separator"></div>
 
     <p>Ce que mes anciens collaborateurs disent de moi :</p>
+    <ul>
+      <li>
+        <a href="./pdf/cto.pdf" target="_blank" title="Consultez le PDF"
+          ><span>Supérieur</span> CTO</a
+        >
+      </li>
+    </ul>
     <p>Ancienne vie pro</p>
     <ul>
       <li>

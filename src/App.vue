@@ -7,6 +7,8 @@
     <!-- TODO tri (back, front, framework) voir une recherche a mettre en place -->
     <ExercisesComponent />
 
+    <ExperienceComponent />
+
     <TrainingComponent />
 
     <HobbiesComponent />
@@ -26,6 +28,7 @@ import HobbiesComponent from "./components/HobbiesComponent";
 import TrainingComponent from "./components/TrainingComponent";
 import MoreComponent from "./components/MoreComponent";
 import ExercisesComponent from "./components/ExercisesComponent";
+import ExperienceComponent from "./components/ExperienceComponent";
 import { onMounted, onBeforeUnmount } from "vue";
 
 export default {
@@ -37,6 +40,7 @@ export default {
     TrainingComponent,
     MoreComponent,
     ExercisesComponent,
+    ExperienceComponent,
   },
   setup() {
     const handleScroll = () => {

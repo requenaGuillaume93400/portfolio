@@ -67,6 +67,7 @@ article div:not(.separator):nth-of-type(8) a {
 }
 .blog {
   background: url("../assets/images/blog.png");
+  background-position: 0 -31px;
 }
 .shop {
   background: url("../assets/images/shop.png");

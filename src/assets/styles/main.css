@@ -559,3 +559,57 @@ footer {
     background-position: 0% -50px;
   }
 }
+
+.blog:hover {
+  animation-duration: 30s;
+  animation-name: blog;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blog {
+  from {
+    background-position: 0% -31px;
+  }
+  9% {
+    background-position: 14.2% -31px;
+  }
+  18% {
+    background-position: 28.5% -31px;
+  }
+  26% {
+    background-position: 42.8% -31px;
+  }
+  33% {
+    background-position: 57% -31px;
+  }
+  38% {
+    background-position: 71.5% -31px;
+  }
+  43% {
+    background-position: 85.5% -31px;
+  }
+  50% {
+    background-position: 100% -31px;
+  }
+  58% {
+    background-position: 85.5% -31px;
+  }
+  66% {
+    background-position: 71.5% -31px;
+  }
+  74% {
+    background-position: 57% -31px;
+  }
+  82% {
+    background-position: 42.8% -31px;
+  }
+  90% {
+    background-position: 28.5% -31px;
+  }
+  95% {
+    background-position: 14.2% -31px;
+  }
+  to {
+    background-position: 0% -31px;
+  }
+}
