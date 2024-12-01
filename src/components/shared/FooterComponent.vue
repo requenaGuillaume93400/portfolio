@@ -4,21 +4,21 @@
 
     <div>
       <p>
-        <a href="mailto:g.requena95220@gmail.com" title="Envoyez moi un e-mail"
-          ><i class="fas fa-envelope"></i
-        ></a>
+        <a href="mailto:g.requena95220@gmail.com" title="Envoyez moi un e-mail">
+          <i class="fas fa-envelope"></i>
+        </a>
       </p>
       <p>
-        <a href="mailto:g.requena95220@gmail.com" title="Envoyez moi un e-mail"
-          >g.requena95220@gmail.com</a
-        >
+        <a href="mailto:g.requena95220@gmail.com" title="Envoyez moi un e-mail">
+          g.requena95220@gmail.com
+        </a>
       </p>
     </div>
     <div>
       <p>
-        <a href="tel:+33606871539" title="Appellez moi"
-          ><i class="fas fa-mobile-alt"></i
-        ></a>
+        <a href="tel:+33606871539" title="Appellez moi">
+          <i class="fas fa-mobile-alt"></i>
+        </a>
       </p>
       <p>
         <a href="tel:+33606871539" title="Appellez moi">06 06 87 15 39</a>
@@ -32,14 +32,14 @@
         href="https://www.linkedin.com/in/requenaGuillaume"
         title="Visitez mon profil LinkedIn"
         target="_blank"
-        ><i class="fab fa-linkedin"></i
-      ></a>
+        ><i class="fab fa-linkedin"></i>
+      </a>
       <a
         href="https://github.com/requenaGuillaume93400"
         title="Visitez mon profil Github"
         target="_blank"
-        ><i class="fab fa-github-square"></i
-      ></a>
+        ><i class="fab fa-github-square"></i>
+      </a>
     </p>
     <p>Guillaume Requena © 2021 - 2024</p>
     <p>Tous droits réservés</p>

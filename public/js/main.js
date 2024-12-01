@@ -1,3 +1,4 @@
+// TODO supprimer ce script il n'est plus utilisé il a été remplacé
 // *************************************************************************************************************************** \\
 // ****************************************************** VARIABLES ********************************************************** \\
 // *************************************************************************************************************************** \\
@@ -19,16 +20,23 @@ let startTimer;
 // ****************************************************** MAIN CODE ********************************************************** \\
 // *************************************************************************************************************************** \\
 window.addEventListener("DOMContentLoaded", function () {
+  console.log("ok");
   modal();
   window.document.addEventListener("scroll", function () {
     progress = (Math.ceil(window.scrollY) * 100) / scrollable;
+
+    // 5 articles
+    console.log(progress);
 
     // First h2 & article
     showTitle(2, 0);
     showArticle(2, 0);
 
-    showTitle(28, 1);
-    showArticle(29, 1);
+    showTitle(1, 1);
+    showArticle(1, 1);
+
+    // showTitle(28, 1);
+    // showArticle(29, 1);
 
     showTitle(31, 2);
     showArticle(33, 2);
@@ -72,21 +80,21 @@ function carrousel(element, carrouselNumber) {
   });
 }
 
-function showTitle(progressPercentage, number) {
+function showTitle(progressPercentage, titleNumber) {
   if (
     progress >= progressPercentage &&
-    !titles[number].classList.contains("show-right")
+    !titles[titleNumber].classList.contains("show-right")
   ) {
-    titles[number].classList.add("show-right");
+    titles[titleNumber].classList.add("show-right");
   }
 }
 
-function showArticle(progressPercentage, number) {
+function showArticle(progressPercentage, articleNumber) {
   if (
     progress >= progressPercentage &&
-    !articles[number].classList.contains("show-left")
+    !articles[articleNumber].classList.contains("show-left")
   ) {
-    articles[number].classList.add("show-left");
+    articles[articleNumber].classList.add("show-left");
   }
 }
 

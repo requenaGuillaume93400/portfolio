@@ -74,14 +74,17 @@ export default {
       showTitle(2, 0);
       showArticle(2, 0);
 
-      showTitle(28, 1);
-      showArticle(29, 1);
+      showTitle(4, 1);
+      showArticle(4, 1);
 
-      showTitle(31, 2);
-      showArticle(33, 2);
+      showTitle(8, 2);
+      showArticle(8, 2);
 
-      showTitle(38, 3);
-      showArticle(39, 3);
+      showTitle(45, 3);
+      showArticle(45, 3);
+
+      showTitle(52, 4);
+      showArticle(52, 4);
 
       const fadeImage = () => {
         progress = (Math.ceil(window.scrollY) * 100) / scrollable;
