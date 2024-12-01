@@ -36,7 +36,6 @@ export default {
       { alt: "Postman", title: "Postman", image: "postman.png" },
       { alt: "React", title: "React", image: "react.png" },
       { alt: "JavaScript", title: "JavaScript", image: "javascript.png" },
-      // TODO Mettre un p pour apiplatform ? a decider
       { alt: "ApiPlatform", title: "ApiPlatform", image: "apiplatform.png" },
       { alt: "Bootstrap", title: "Bootstrap", image: "bootstrap.png" },
     ];

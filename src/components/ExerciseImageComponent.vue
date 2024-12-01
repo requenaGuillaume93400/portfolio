@@ -27,8 +27,6 @@ div > p {
   margin-right: 0.3rem;
 }
 
-/* TODO sauf si .test contient un .gitLinks */
-/* div  */
 .test {
   cursor: pointer;
   margin: 1.5rem 0;
@@ -37,71 +35,47 @@ div > p {
   background-color: var(--custom-white);
   border-radius: 10px;
   overflow: hidden;
-  /*  */
   background-position: 0%;
 }
+
 .restau {
   background: url("../assets/images/restau.png");
-  /* background-position: 0 10px; */
 }
+
 .hello {
   background: url("../assets/images/hello.png");
   background-position: 0 -20px;
 }
+
 .archi {
   background: url("../assets/images/archi.png");
   background-position: 0 -20px;
 }
 
-/* article div:not(.separator):nth-of-type(5) a,
-article div:not(.separator):nth-of-type(7) a,
-article div:not(.separator):nth-of-type(8) a {
-  display: block;
-  width: 100%;
-  height: 100%;
-} */
-
 .fake {
   background: url("../assets/images/fake.png");
   background-position: 0 -20px;
 }
+
 .blog {
   background: url("../assets/images/blog.png");
   background-position: 0 -31px;
 }
+
 .shop {
   background: url("../assets/images/shop.png");
   background-position: 0 -40px;
 }
+
 .aw {
   background: url("../assets/images/aw.png");
   background-position: 0 -50px;
 }
+
 .artwork {
   background: url("../assets/images/artwork.png");
   background-position: 0 -31px;
 }
-
-/* article div:not(.separator):nth-of-type(1),
-article div:not(.separator):nth-of-type(2),
-article div:not(.separator):nth-of-type(3),
-article div:not(.separator):nth-of-type(5) a,
-article div:not(.separator):nth-of-type(7) a,
-article div:not(.separator):nth-of-type(8) a,
-article div:not(.separator):nth-of-type(10),
-article div:not(.separator):nth-of-type(13) {
-  background-position: 0%;
-} */
-
-/* TODO a virer le test ? */
-/* .test {
-  display: block !important;
-  width: 40px !important;
-  height: 40px !important;
-  font-weight: 20px !important;
-  background-color: white !important;
-  color: red !important;
-} */
 
 @media screen and (max-width: 690px) {
   .fake {

@@ -4,11 +4,11 @@ Portfolio en Vuejs
 Changement par rapport a l'actuel : 
 
   TODO - a choisir une autre image ? ....
-  1)Fond blanc (plus d'image)
+  1) Fond blanc (plus d'image)
 
   2) Remove css !important
 
-  3)Trier les exercices / réalisations 
+  3) Trier les exercices / réalisations 
      par type : Front-end, Back-end
      par language
      par framework

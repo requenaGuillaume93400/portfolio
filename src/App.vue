@@ -89,7 +89,7 @@ export default {
       const fadeImage = () => {
         progress = (Math.ceil(window.scrollY) * 100) / scrollable;
 
-        progress < 44 ? (startTimer = 4000) : (startTimer = 2000);
+        progress < 4 ? (startTimer = 3000) : (startTimer = 1500);
 
         setTimeout(function () {
           images.forEach(function (image) {

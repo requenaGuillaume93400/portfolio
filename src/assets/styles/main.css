@@ -1,11 +1,5 @@
 /* TODO Utilisez des formats modernes comme WebP pour les images si possible, 
 et assurez-vous que les images sont compressées. */
-/* TODO j'ai cassé le responsive du footer and header img responsive */
-/* and first separator line in first article */
-/* and image display none resposnive */
-/* and responsive of testimonies + codewars logo */
-/* Article 3 devient le 2 */
-/* Article 6 devient le 4 */
 /* ===================== GLOBAL SETTINGS ===================== */
 @font-face {
   font-family: "comfortaa";
@@ -59,6 +53,7 @@ main {
   margin: 0 auto;
   overflow: hidden;
 }
+
 main h2 {
   width: 125%;
   margin: 5rem auto 0.4rem auto;
@@ -68,52 +63,57 @@ main h2 {
   z-index: -1;
   position: relative;
 }
+
 main p {
   line-height: 1.5;
 }
+
 main img {
   border-radius: 25%;
 }
+
 main .separator {
   width: 80%;
   height: 2px;
   margin: 20px auto;
   border-bottom: 2px dashed rgba(228, 228, 228, 0.897);
 }
+
 main article {
   width: 100%;
   margin: 0 auto;
   background-color: var(--transparent-black);
   color: var(--custom-white);
   border-radius: 1rem;
-  padding: 0 0.5rem;
 }
-/* TODO (a retirer ?) */
-main article:nth-of-type(1) div {
-  margin: 0 auto;
-}
+
 main article.flex-container figure figcaption {
   text-align: center;
 }
+
 main article.flex-container {
   padding: 1rem 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
+
 main article.flex-container figure {
   margin: 0.5rem;
 }
+
 main article.flex-container figure img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   box-shadow: 0px 0px 7px 0px var(--custom-black);
 }
+
 main article a img:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
+
 main article .cv {
   display: block;
   width: 20%;
@@ -127,20 +127,24 @@ main article .cv {
   font-weight: bold;
   text-decoration: none;
 }
+
 main article .cv:hover {
   border: 2px solid var(--custom-black);
   background-color: rgba(255, 255, 255, 0.85);
   transition: 0.6s;
   color: var(--custom-black);
 }
+
 main .show-right,
 main .show-left {
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
+
 main .show-right {
   animation-name: switch-right;
 }
+
 main .show-left {
   animation-name: switch-left;
 }
@@ -157,18 +161,52 @@ main .show-left {
 figure {
   margin: 0.5rem;
 }
+
 figure img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 1);
 }
+
 figcaption {
   text-align: center;
 }
 
 footer {
   margin-top: 2rem;
+}
+
+article {
+  padding: 1.2rem 0 1rem 0;
+}
+
+article .container .internship {
+  width: 100px;
+  margin-left: 0;
+}
+
+article .container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+
+article .container:not(:nth-of-type(1)) {
+  margin-top: 0.6rem;
+}
+
+article .container div {
+  margin-left: 4rem;
+}
+
+article .container div p:first-child {
+  font-weight: bold;
+}
+
+article .container ul {
+  margin-left: 2rem;
+  list-style-type: "- ";
 }
 
 /* ===================== RESPONSIVE ===================== */
@@ -243,6 +281,15 @@ footer {
   }
 }
 
+@media screen and (max-width: 430px) {
+  article a {
+    display: none;
+  }
+  .container .internship {
+    display: none;
+  }
+}
+
 /* ===================== ANIMATIONS ===================== */
 
 @keyframes switch-right {
@@ -280,10 +327,51 @@ footer {
 }
 
 /* ===================== CARROUSELS ===================== */
-/* TODO a faire les autres carrousels */
 .restauAnimation:hover {
   animation-duration: 30s;
   animation-name: restau;
+  animation-iteration-count: infinite;
+}
+
+.helloAnimation:hover {
+  animation-duration: 40s;
+  animation-name: hello;
+  animation-iteration-count: infinite;
+}
+
+.archiAnimation:hover {
+  animation-duration: 10s;
+  animation-name: archi;
+  animation-iteration-count: infinite;
+}
+
+.fakeAnimation:hover {
+  animation-duration: 40s;
+  animation-name: fake;
+  animation-iteration-count: infinite;
+}
+
+.artworkAnimation:hover {
+  animation-duration: 20s;
+  animation-name: art;
+  animation-iteration-count: infinite;
+}
+
+.aw:hover {
+  animation-duration: 30s;
+  animation-name: aw;
+  animation-iteration-count: infinite;
+}
+
+.blog:hover {
+  animation-duration: 30s;
+  animation-name: blog;
+  animation-iteration-count: infinite;
+}
+
+.shop:hover {
+  animation-duration: 30s;
+  animation-name: shop;
   animation-iteration-count: infinite;
 }
 
@@ -335,12 +423,6 @@ footer {
   }
 }
 
-.helloAnimation:hover {
-  animation-duration: 40s;
-  animation-name: hello;
-  animation-iteration-count: infinite;
-}
-
 @keyframes hello {
   from {
     background-position: 0% -20px;
@@ -377,12 +459,6 @@ footer {
   }
 }
 
-.archiAnimation:hover {
-  animation-duration: 10s;
-  animation-name: archi;
-  animation-iteration-count: infinite;
-}
-
 @keyframes archi {
   from {
     background-position: 0% -20px;
@@ -393,12 +469,6 @@ footer {
   to {
     background-position: 0% -20px;
   }
-}
-
-.fakeAnimation:hover {
-  animation-duration: 40s;
-  animation-name: fake;
-  animation-iteration-count: infinite;
 }
 
 @keyframes fake {
@@ -482,12 +552,6 @@ footer {
   }
 }
 
-.artworkAnimation:hover {
-  animation-duration: 20s;
-  animation-name: art;
-  animation-iteration-count: infinite;
-}
-
 @keyframes art {
   from {
     background-position: 0% -31px;
@@ -510,12 +574,6 @@ footer {
   to {
     background-position: 0% -31px;
   }
-}
-
-.aw:hover {
-  animation-duration: 30s;
-  animation-name: aw;
-  animation-iteration-count: infinite;
 }
 
 @keyframes aw {
@@ -558,12 +616,6 @@ footer {
   to {
     background-position: 0% -50px;
   }
-}
-
-.blog:hover {
-  animation-duration: 30s;
-  animation-name: blog;
-  animation-iteration-count: infinite;
 }
 
 @keyframes blog {
@@ -612,12 +664,6 @@ footer {
   to {
     background-position: 0% -31px;
   }
-}
-
-.shop:hover {
-  animation-duration: 30s;
-  animation-name: shop;
-  animation-iteration-count: infinite;
 }
 
 @keyframes shop {

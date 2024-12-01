@@ -62,34 +62,10 @@
 </template>
 
 <style scoped>
-article {
-  padding: 1.2rem 0 1rem 0;
-}
-article .container .internship {
-  width: 100px;
-  margin-left: 0;
-}
-article .container {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-}
-article .container:not(:nth-of-type(1)) {
-  margin-top: 0.6rem;
-}
-article .container div {
-  margin-left: 4rem;
-}
-article .container div p:first-child {
-  font-weight: bold;
-}
-article .container ul {
-  margin-left: 2rem;
-  list-style-type: "- ";
-}
 img {
   opacity: 0;
 }
+
 .reco {
   float: right;
   background-color: orange;
@@ -97,10 +73,12 @@ img {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
 .reco a {
   color: #fff;
   text-decoration: none;
 }
+
 .reco a:hover {
   color: rgba(0, 0, 0, 0.693);
 }

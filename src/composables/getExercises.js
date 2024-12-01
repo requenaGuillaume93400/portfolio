@@ -1,11 +1,10 @@
 const getExercises = () => {
-  // remplacer id par title ?
+  // TODO remplacer id par title ? Ajouter image et mobileImage quand il faut ?
   const pathToImages = "../assets/images/";
 
   return [
     {
       id: 1,
-      // image: "../assets/images/restau.png",
       image: `${pathToImages}restau.png`,
       mobileImage: null,
       tags: ["html", "css", "js"],
@@ -16,7 +15,6 @@ const getExercises = () => {
     },
     {
       id: 2,
-      // image: "../assets/images/hello.png",
       image: `${pathToImages}hello.png`,
       mobileImage: null,
       tags: ["html", "css"],
@@ -27,7 +25,6 @@ const getExercises = () => {
     },
     {
       id: 3,
-      // image: "../assets/images/archi.png",
       image: `${pathToImages}archi.png`,
       mobileImage: null,
       tags: ["html", "css"],
@@ -38,9 +35,7 @@ const getExercises = () => {
     },
     {
       id: 4,
-      // image: "../assets/images/fake.png",
       image: `${pathToImages}fake.png`,
-      // mobileImage: "../assets/images/fake-mobile.png",
       mobileImage: `${pathToImages}fake-mobile.png`,
       tags: ["html", "scss", "js", "php", "sql"],
       link: null,
@@ -50,7 +45,6 @@ const getExercises = () => {
     },
     {
       id: 5,
-      // image: "../assets/images/blog.png",
       image: `${pathToImages}blog.png`,
       mobileImage: null,
       tags: ["twig", "bootstrap", "symfony"],
@@ -61,7 +55,6 @@ const getExercises = () => {
     },
     {
       id: 6,
-      // image: "../assets/images/shop.png",
       image: `${pathToImages}shop.png`,
       mobileImage: null,
       tags: ["twig", "bootstrap", "symfony"],
@@ -72,7 +65,6 @@ const getExercises = () => {
     },
     {
       id: 7,
-      // image: "../assets/images/aw.png",
       image: `${pathToImages}aw.png`,
       mobileImage: null,
       tags: ["python"],
@@ -110,9 +102,7 @@ const getExercises = () => {
       text: null,
     },
     {
-      // TODO test
       id: 11,
-      //  Ajouter image ?
       image: null,
       mobileImage: null,
       tags: ["html", "php", "bootstrap"],
@@ -122,7 +112,6 @@ const getExercises = () => {
     },
     {
       id: 12,
-      // Ajouter image ?
       image: null,
       mobileImage: null,
       tags: ["wordpress"],
@@ -132,7 +121,6 @@ const getExercises = () => {
     },
     {
       id: 13,
-      // Ajouter image ?
       image: null,
       mobileImage: null,
       tags: ["symfony", "twig", "bootstrap"],
@@ -142,7 +130,6 @@ const getExercises = () => {
     },
     {
       id: 14,
-      // Ajouter image ?
       image: null,
       mobileImage: null,
       tags: ["symfony", "twig", "bootstrap"],
@@ -152,7 +139,6 @@ const getExercises = () => {
     },
     {
       id: 15,
-      // Ajouter image ?
       image: null,
       mobileImage: null,
       tags: ["symfony", "twig", "bootstrap"],
