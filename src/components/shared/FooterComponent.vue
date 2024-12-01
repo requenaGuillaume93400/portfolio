@@ -4,13 +4,13 @@
 
     <div>
       <p>
-        <a href="mailto:g.requena@laposte.net" title="Envoyez moi un e-mail"
+        <a href="mailto:g.requena95220@gmail.com" title="Envoyez moi un e-mail"
           ><i class="fas fa-envelope"></i
         ></a>
       </p>
       <p>
-        <a href="mailto:g.requena@laposte.net" title="Envoyez moi un e-mail"
-          >g.requena@laposte.net</a
+        <a href="mailto:g.requena95220@gmail.com" title="Envoyez moi un e-mail"
+          >g.requena95220@gmail.com</a
         >
       </p>
     </div>
