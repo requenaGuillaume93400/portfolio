@@ -3,7 +3,6 @@
   <article>
     <div>
       <div v-for="tag in tagList" :key="tag" class="checkbox">
-        <!-- TODO Pré séléctionné php symfony et python -->
         <input type="checkbox" v-model="techs" :value="tag" />
         <label :for="tag">{{ tag }}</label>
       </div>
@@ -36,7 +35,7 @@ import ExerciseButtonComponent from "./ExerciseButtonComponent";
 export default {
   components: { ExerciseImageComponent, ExerciseButtonComponent },
   setup() {
-    const techs = ref([]);
+    const techs = ref(["symfony", "php", "python"]);
 
     const tagList = [
       "html",
