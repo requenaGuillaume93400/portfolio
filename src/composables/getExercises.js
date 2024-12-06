@@ -1,5 +1,4 @@
 const getExercises = () => {
-  // TODO remplacer id par title ? Ajouter image et mobileImage quand il faut ?
   const pathToImages = "../assets/images/";
 
   return [
@@ -93,7 +92,7 @@ const getExercises = () => {
     },
     {
       id: 10,
-      image: "../assets/images/artwork.png",
+      image: `${pathToImages}artwork.png`,
       mobileImage: null,
       tags: ["react", "scss"],
       link: null,
@@ -145,6 +144,16 @@ const getExercises = () => {
       link: "https://github.com/requenaGuillaume93400/todolist",
       class: "gitLinks",
       text: "Upgrade php/symfony versions and add tests - Todolist (Github)",
+    },
+    {
+      id: 16,
+      image: `${pathToImages}portfolio.png`,
+      mobileImage: null,
+      tags: ["vue", "html", "css"],
+      link: null,
+      class: "portfolio",
+      animation: "",
+      text: null,
     },
   ];
 };

@@ -77,6 +77,10 @@ div > p {
   background-position: 0 -31px;
 }
 
+.portfolio {
+  background: url("../assets/images/portfolio.png") center/cover;
+}
+
 @media screen and (max-width: 690px) {
   .fake {
     background: url("../assets/images/fake-mobile.png");

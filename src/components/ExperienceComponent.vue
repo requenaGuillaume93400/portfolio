@@ -16,10 +16,18 @@
           <li>Automatisation d'un processus de contrôle documentaire</li>
           <li>
             Développement de la partie front end d'une application Salesforce
+            (avec lwc)
           </li>
           <li>Découverte du framework CodeIgniter</li>
         </ul>
-        <p>Août 2024 - Décembre 2024</p>
+        <p>
+          Août 2024 - Décembre 2024
+          <span class="reco">
+            <a href="./pdf/market.pdf" target="_blank" title="Consultez le PDF">
+              Lettre de recommandation
+            </a>
+          </span>
+        </p>
       </div>
     </div>
 
@@ -34,8 +42,8 @@
         <p>EcoTree (alternance)</p>
         <ul>
           <li>ApiPlatform</li>
-          <li>Graphql</li>
-          <li>Sonata</li>
+          <li>Api Graphql</li>
+          <li>Sonata (back office et crud)</li>
           <li>
             Recherche de solutions techniques pour répondre à un besoin
             spécifique
@@ -70,8 +78,7 @@ img {
   float: right;
   background-color: orange;
   border-radius: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.2rem 0.5rem;
 }
 
 .reco a {
@@ -81,6 +88,10 @@ img {
 
 .reco a:hover {
   color: rgba(0, 0, 0, 0.693);
+}
+
+.container a + div {
+  flex-grow: 1;
 }
 
 @media screen and (max-width: 430px) {

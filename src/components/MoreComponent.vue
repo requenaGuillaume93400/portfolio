@@ -10,7 +10,7 @@
     <p>
       Curriculum Vitae
       <a
-        href="assets/pdf/cv.pdf"
+        href="pdf/cv.pdf"
         target="_blank"
         title="Téléchargez mon CV"
         class="cv"
@@ -41,9 +41,16 @@
     <p>Ce que mes anciens collaborateurs disent de moi :</p>
     <ul>
       <li>
-        <a href="./pdf/cto.pdf" target="_blank" title="Consultez le PDF"
-          ><span>Supérieur</span> CTO</a
-        >
+        <a href="./pdf/market.pdf" target="_blank" title="Consultez le PDF">
+          <span>Supérieur</span>
+          Responsable marketing et projets
+        </a>
+      </li>
+      <li>
+        <a href="./pdf/cto.pdf" target="_blank" title="Consultez le PDF">
+          <span>Supérieur</span>
+          Tech lead
+        </a>
       </li>
     </ul>
     <p>Ancienne vie pro</p>

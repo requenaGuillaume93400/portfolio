@@ -19,6 +19,7 @@
       </div>
       <div>
         <p>Développeur d'applications PHP/Symfony</p>
+        <p>Titre RNCP de niveau 6 FR/EU (équivalent BAC +3/4)</p>
         <p>Openclassrooms</p>
         <ul>
           <li>
@@ -54,8 +55,8 @@
         <p>EcoTree</p>
         <ul>
           <li>ApiPlatform</li>
-          <li>Graphql</li>
-          <li>Sonata</li>
+          <li>Api Graphql</li>
+          <li>Sonata (back office et crud)</li>
           <li>
             Recherche de solutions techniques pour répondre à un besoin
             spécifique
