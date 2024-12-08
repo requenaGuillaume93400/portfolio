@@ -84,6 +84,7 @@ img {
 .reco a {
   color: #fff;
   text-decoration: none;
+  display: block;
 }
 
 .reco a:hover {
@@ -94,10 +95,22 @@ img {
   flex-grow: 1;
 }
 
-@media screen and (max-width: 430px) {
-  article a {
+@media screen and (max-width: 500px) {
+  img {
     display: none;
   }
+
+  .reco {
+    display: block;
+    float: left;
+  }
+
+  main article ul li {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 430px) {
   .container .internship {
     display: none;
   }

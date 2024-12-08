@@ -7,34 +7,35 @@
 
     <div class="separator"></div>
 
-    <p>
-      Curriculum Vitae
-      <a
-        href="pdf/cv.pdf"
-        target="_blank"
-        title="Téléchargez mon CV"
-        class="cv"
-      >
-        Téléchargez mon CV
-      </a>
-    </p>
+    <!-- TODO -->
+    <div class="container">
+      <p>
+        Curriculum Vitae
+        <a
+          href="pdf/cv.pdf"
+          target="_blank"
+          title="Téléchargez mon CV"
+          class="cv"
+        >
+          Téléchargez mon CV
+        </a>
+      </p>
 
-    <div class="separator"></div>
-
-    <p class="codewarsp">
-      S'exerce en algorythmie sur Codewars
-      <a
-        href="https://www.codewars.com/users/guillaumeRequena"
-        target="_blank"
-        title="Visitez mon profil Codewars"
-        ><img
-          class="codewars"
-          src="/images/codewars.png"
-          alt="Logo Codewars"
-          loading="lazy"
-        />
-      </a>
-    </p>
+      <p class="codewarsp">
+        S'exerce en algorythmie sur Codewars
+        <a
+          href="https://www.codewars.com/users/guillaumeRequena"
+          target="_blank"
+          title="Visitez mon profil Codewars"
+          ><img
+            class="codewars"
+            src="/images/codewars.png"
+            alt="Logo Codewars"
+            loading="lazy"
+          />
+        </a>
+      </p>
+    </div>
 
     <div class="separator"></div>
 
@@ -108,7 +109,7 @@ article ul li span {
 }
 article .cv {
   display: block;
-  width: 20%;
+  width: 40%;
   margin: 0.5rem auto 0 auto;
   padding: 1.2rem 0.3rem;
   border-radius: 0.5rem;
@@ -177,15 +178,30 @@ p {
   margin: 1rem auto;
 }
 
+.container {
+  display: flex;
+}
+
 @media screen and (max-width: 690px) {
   main article .cv {
-    width: 140px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 647px) {
   article ul li {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  article .container:not(.separator) {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  article div:not(.separator) p {
+    width: 90%;
   }
 }
 </style>

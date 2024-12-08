@@ -84,6 +84,7 @@ div > p {
 @media screen and (max-width: 690px) {
   .fake {
     background: url("../assets/images/fake-mobile.png");
+    background-position: 0 -20px;
   }
 }
 </style>

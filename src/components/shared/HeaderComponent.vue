@@ -35,6 +35,7 @@ export default {
       { alt: "MacOS", title: "MacOS", image: "macos.png" },
       { alt: "Postman", title: "Postman", image: "postman.png" },
       { alt: "React", title: "React", image: "react.png" },
+      { alt: "Vuejs", title: "Vuejs", image: "vue.png" },
       { alt: "JavaScript", title: "JavaScript", image: "javascript.png" },
       { alt: "ApiPlatform", title: "ApiPlatform", image: "apiplatform.png" },
       { alt: "Bootstrap", title: "Bootstrap", image: "bootstrap.png" },

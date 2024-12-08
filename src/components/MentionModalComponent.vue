@@ -44,4 +44,11 @@ export default {
   background: url("../assets/images/mention.png") center/cover;
   cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+  .modal-mention {
+    margin-left: initial;
+    width: 75%;
+  }
+}
 </style>

@@ -175,4 +175,18 @@ export default {
 img {
   opacity: 0;
 }
+
+@media screen and (max-width: 500px) {
+  img {
+    display: none;
+  }
+
+  main article ul li {
+    width: 85%;
+  }
+
+  .internship {
+    display: none;
+  }
+}
 </style>

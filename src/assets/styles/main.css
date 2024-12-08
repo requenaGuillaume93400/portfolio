@@ -209,87 +209,6 @@ article .container ul {
   list-style-type: "- ";
 }
 
-/* ===================== RESPONSIVE ===================== */
-@media screen and (max-width: 1115px) {
-  figure img {
-    width: 80px;
-    height: 80px;
-  }
-}
-
-@media screen and (max-width: 910px) {
-  figure img {
-    width: 70px;
-    height: 70px;
-  }
-  figcaption {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 843px) {
-  body {
-    background: url("../images/binary-tablet.png") center fixed;
-  }
-  header h1 {
-    font-size: 3rem;
-  }
-  header h1 span,
-  header h1 span:nth-of-type(2) {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  body {
-    background: url("../images/binary-mobile.png") center fixed;
-  }
-  main article ul li {
-    width: 140px;
-  }
-}
-
-@media screen and (max-width: 597px) {
-  figure img {
-    width: 60px;
-    height: 60px;
-  }
-
-  figcaption {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  figure img {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-@media screen and (max-width: 524px) {
-  figure img {
-    width: 43px;
-    height: 43px;
-  }
-}
-
-@media screen and (max-width: 489) {
-  figure img {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  article a {
-    display: none;
-  }
-  .container .internship {
-    display: none;
-  }
-}
-
 /* ===================== ANIMATIONS ===================== */
 
 @keyframes switch-right {
@@ -552,6 +471,36 @@ article .container ul {
   }
 }
 
+@keyframes fakebis {
+  from {
+    background-position: 0% -20px;
+  }
+  10% {
+    background-position: 14.2% -20px;
+  }
+  20% {
+    background-position: 28.5% -20px;
+  }
+  30% {
+    background-position: 42.8% -20px;
+  }
+  40% {
+    background-position: 57.2% -20px;
+  }
+  50% {
+    background-position: 71.4% -20px;
+  }
+  60% {
+    background-position: 85.7% -20px;
+  }
+  70% {
+    background-position: 100% -20px;
+  }
+  to {
+    background-position: 0% -20px;
+  }
+}
+
 @keyframes art {
   from {
     background-position: 0% -31px;
@@ -711,5 +660,90 @@ article .container ul {
   }
   to {
     background-position: 0% -40px;
+  }
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media screen and (max-width: 1115px) {
+  figure img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  figure img {
+    width: 70px;
+    height: 70px;
+  }
+  figcaption {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 843px) {
+  body {
+    background: url("../images/binary-tablet.png") center fixed;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  header h1 span,
+  header h1 span:nth-of-type(2) {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  body {
+    background: url("../images/binary-mobile.png") center fixed;
+  }
+
+  main article ul li {
+    width: 140px;
+  }
+
+  .fakeAnimation:hover {
+    animation-duration: 40s;
+    animation-name: fakebis;
+    animation-iteration-count: infinite;
+  }
+}
+
+@media screen and (max-width: 597px) {
+  figure img {
+    width: 60px;
+    height: 60px;
+  }
+
+  figcaption {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  figure img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  figure img {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+@media screen and (max-width: 489) {
+  figure img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container .internship {
+    display: none;
   }
 }
